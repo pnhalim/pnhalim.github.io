@@ -1,3 +1,0 @@
-# Portfolio Website
-
-Patrick Halim
