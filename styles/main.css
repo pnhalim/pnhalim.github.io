@@ -1,0 +1,51 @@
+html, body { 
+  padding: 0%;
+  margin: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: goldenrod;
+}
+p {
+  white-space: pre-line;
+}
+
+.circle {
+  border-radius: 50%;
+  background: white;
+  width: 50%;
+  min-width: 14rem;
+  display: flex;
+}
+.profilepic {
+  width: 96%;
+  padding: 2%;
+  border-radius: 50%;
+}
+.parallelogram {
+  background: white;
+  width:100%;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  clip-path: polygon(0 calc(10vw), 100% 0, 100% calc(100% - 10vw), 0 100%); 
+}
+.outer-parallelogram {
+  background: red;
+  width:100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  clip-path: polygon(0 calc(10vw), 100% 0, 100% calc(100% - 10vw), 0 100%); 
+}
+.external-link {
+  text-decoration: none;
+  color: red;
+  border-radius: 500px;
+  padding: 0.5rem 1rem;
+  border: 2px;
+  border-style: solid;
+  border-color: red;
+}
+.external-link:hover {
+  color: white;
+  background: red;
+}
