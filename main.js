@@ -10,5 +10,5 @@ const updateViewBox = () => {
 }
 hi.addEventListener( 'SVGLoad', updateViewBox );
 mq.addEventListener( 'change', updateViewBox );
-
+updateViewBox()
 
