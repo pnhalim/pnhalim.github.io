@@ -87,13 +87,8 @@ a:hover {
   width: 25vw;
   position: absolute;
   left: 10vw;
-  top: 70vh;
+  top: 65vh;
   font-size: 2rem;
-}
-@media only screen and (min-width: 500px) {
-  .intro {
-    top: 65vh;
-  }
 }
 @media only screen and (min-width: 700px) {
   .circle {
