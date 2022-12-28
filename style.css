@@ -91,14 +91,14 @@ a:hover {
 .education {
   position: absolute;
   top: 100vh;
-  margin: 10vh 5vw;
+  margin: 0 4vw;
 }
 .quote {
   font-size: clamp(1rem, 3vw, 2rem);
   margin: 0;
 }
 .column {
-  margin: 2rem 3vw;
+  margin: 3vw 3vw;
 }
 .right-align {
   text-align: end;
@@ -110,6 +110,11 @@ a:hover {
 .link-collection > a {
   display: inline-block;
   margin-bottom: 0.5rem;
+}
+.box {
+  background-color: rgba(83, 83, 83, 0.432);
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 @media only screen and (min-width: 700px) {
