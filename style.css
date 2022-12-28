@@ -88,7 +88,7 @@ a:hover {
   position: absolute;
   left: 10vw;
   top: 70vh;
-  font-size: clamp(2rem, 7vw, 3rem);
+  font-size: 2rem;
 }
 @media only screen and (min-width: 500px) {
   .intro {
@@ -102,17 +102,11 @@ a:hover {
     width: clamp(10vh, 30%, 55vh);
   }
   .intro {
-    top: 50vh;
     left: 18vw;
+    font-size: 2rem;
   }
   #hi {
     margin-top: 15vh;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .intro {
-    top: 60vh;
-    left: 18vw;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -120,7 +114,7 @@ a:hover {
     right: 28vw;
   }
   .intro {
-    top: 65vh;
+    top: 70vh;
   }
   #hi {
     margin-top: 7vh;
