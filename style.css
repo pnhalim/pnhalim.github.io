@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prosto+One&display=swap');
+html, body { 
+  padding: 0%;
+  margin: 0%;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  overflow-x: clip;
+}
+body {
+  background: black;
+}
+p {
+  white-space: pre-line;
+}
+h1 {
+  color: white;
+  font-size: 15vw;
+}
+h3 {
+  color: rgb(255, 217, 121);
+}
+a {
+  text-decoration: none;
+  color: goldenrod;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+a:hover {
+  color: white;
+  background: goldenrod;
+}
+
+
+
+/* navbar */
+.navbar {
+  list-style-type: none;
+  font-size: 1rem;
+  background-color: black;
+  border-bottom: 2px solid goldenrod;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar-right {
+  display: flex;
+}
+.navbar-a {
+  padding: 1rem;
+  border: 0px;
+}
+.icon {
+  width: clamp(1rem, 10vw, 3rem);
+}
+.active {
+  background-color: goldenrod;
+  color: white;
+}
+
+/* hi */
+#hi {
+  margin-top: 15vh;
+}
+
+/* profile pic */
+.circle {
+  border-radius: 50%;
+  background: white;
+  width: clamp(9rem, 40%, 55vh);
+  min-width: 14rem;
+  display: flex;
+  position: absolute;
+  top: 45vh;
+  right: 5vw;
+}
+.profilepic {
+  width: 96%;
+  padding: 2%;
+  border-radius: 50%;
+}
+
+
+/* intro */
+.intro {
+  width: 25vw;
+  position: absolute;
+  left: 10vw;
+  top: 70vh;
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+@media only screen and (min-width: 500px) {
+  .intro {
+    top: 65vh;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .circle {
+    top: 35vh;
+    right: 25vw;
+    width: clamp(10vh, 30%, 55vh);
+  }
+  .intro {
+    top: 50vh;
+    left: 18vw;
+  }
+  #hi {
+    margin-top: 15vh;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .intro {
+    top: 60vh;
+    left: 18vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .circle {
+    right: 28vw;
+  }
+  .intro {
+    top: 65vh;
+  }
+  #hi {
+    margin-top: 7vh;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .intro {
+    top: 80vh;
+  }
+}
+
+
+
+
+/* education */
+.education {
+  visibility: hidden;
+}
+
+
+.parallelogram {
+  background: white;
+  width:100%;
+  padding: 10vw 0;
+  clip-path: polygon(0 calc(10vw), 100% 0, 100% calc(100% - 10vw), 0 100%); 
+}
+.outer-parallelogram {
+  margin: 1rem 0;
+  background: goldenrod;
+  width:100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  clip-path: polygon(0 calc(10vw), 100% 0, 100% calc(100% - 10vw), 0 100%); 
+}
+.external-link {
+  color: goldenrod;
+  border-radius: 500px;
+  padding: 0.5rem 1rem;
+  border: 2px;
+  border-style: solid;
+  border-color: goldenrod;
+}
+.external-link:hover {
+  color: white;
+  background: goldenrod;
+}
+

@@ -11,28 +11,57 @@
   <meta name="description" content="Personal Portfolio Website">
   <meta name="author" content="Patrick Halim">
 
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="navbar">
-    <a class="navbar-a active" href="">Home</a>
-    <a class="navbar-a" href="">Projects</a>
-    <a class="navbar-a" href="">Resume</a>
-    <a class="navbar-a" href="">Contact</a>
+    <img class="icon active" src="/assets/icon.svg">
+    <div class="navbar-right">
+      <a class="navbar-a" href="">Projects</a>
+      <a class="navbar-a" href="">Resume</a>
+      <a class="navbar-a" href="">Contact</a>
+    </div>
   </div>
   <div class="start">
-    <h1 class="hi">Hi TODO</h1>
+    <svg id="hi" 
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewbox="400 0 800 400">
+    <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="15px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+    d="M10.999,290.999 C10.999,290.999 242.875,307.768 338.999,287.999 C360.286,283.622 510.338,238.914 565.999,105.0 C618.939,-22.364 522.150,0.432 512.0,140.0 C505.163,234.579 502.125,346.74 509.0,336.999 C530.298,275.806 595.863,96.591 605.0,241.999 C607.235,315.248 589.469,444.930 665.999,273.0 C674.634,242.195 687.845,194.785 691.999,203.0 C691.409,213.38 650.159,355.597 720.999,324.0 C790.825,292.855 916.382,21.318 1183.999,32.999 C1426.862,43.600 1556.581,482.589 1872.999,295.0 C2189.418,107.410 2033.999,205.0 2033.999,205.0 "/>
+    <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="20px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+    d="M704.0,129.0 C698.742,142.532 698.893,160.75 712.999,130.999 C718.187,120.308 709.257,115.467 704.0,129.0 Z"/>
+    </svg>
+    <div class="circle">
+      <img class="profilepic" src="/assets/patrickprofilepic.jpg" alt="Image of Me">
+    </div>
+    <h2 class="intro">I'm Patrick Halim</h2>
+      
     <div>
-      <div class="circle">
-        <img class="profilepic" src="/assets/patrickprofilepic.jpg" alt="Image of Me">
-      </div>
-      <div>
-        <h1>.</h1><h1>.</h1><h1>.</h1><h1>.</h1><h1>.</h1><h1>.</h1>
-        <h2>I'm Patrick Halim</h2>
+      <div class="education">
         <p><b>B.S. Computer Science
           University of Michigan</b>
         </p>
-        <p>GPA: 4.0 / 4.0</p>
+        <h3>GPA</h3>
+        <ul>
+          <li>4.0 / 4.0</li>         
+        </ul>
+        <h3>Relevant Coursework</h3>
+        <ul>
+          <li>Data Structures and Algorithms</li>
+          <li>Computer Organization</li>
+          <li>Extended Reality and Society</li>
+          <li>Linear Algebra</li>            
+        </ul>
+        <h3>Awards & Honors</h3>
+        <ul>
+          <li>James B. Angell Scholar</li>
+          <li>William J. Branstrom Freshman Prize</li>
+          <li>University Honors</li>
+        </ul>
+        
+        <p>I'm driven by a desire to CREATE and I love LEARNING new things</p>
         <div>
           <a class="external-link" href="">Resume</a>
           <a class="external-link" href="">LinkedIn</a>
@@ -41,11 +70,14 @@
       </div>
     </div>
   </div>
+  <!--
   <div class="outer-parallelogram">  
     <div class="parallelogram">
       <h2>PROJECTS</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a voluptate officia, necessitatibus ad ab quis? Modi, aut eum! Esse quia dignissimos corrupti laudantium quod iusto necessitatibus aperiam nihil iure.</p>
     </div>
   </div>
+  -->
 </body>
+<script src="main.js"></script>
 </html>
