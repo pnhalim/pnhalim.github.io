@@ -1,4 +1,4 @@
-const hi = document.getElementById("hi");
+const hi = document.getElementById("hi-svg");
 
 const mq = matchMedia( '( min-width: 700px )' );
 const updateViewBox = () => {

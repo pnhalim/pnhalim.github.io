@@ -25,6 +25,9 @@ a:hover {
   background: goldenrod;
 }
 
+.section > h2, p {
+  color: black;
+}
 
 
 /* navbar */
@@ -55,7 +58,7 @@ a:hover {
 }
 
 /* hi */
-#hi {
+#hi-svg {
   margin-top: 10vh;
 }
 .start {
@@ -117,6 +120,20 @@ a:hover {
   border-radius: 1rem;
 }
 
+
+/* projects */
+.cursive-section {
+  height: 100vh;
+  display: flex;
+}
+#projects-svg {
+  
+}
+
+
+
+
+/* responsive design */
 @media only screen and (min-width: 700px) {
   .circle {
     top: 35vh;
@@ -160,6 +177,9 @@ a:hover {
 
 
 
+.section {
+  padding: 5vw;
+}
 .parallelogram {
   background: white;
   width:100%;
