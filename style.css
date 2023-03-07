@@ -15,6 +15,8 @@ h3 {
   color: rgb(255, 217, 121);
   margin: 0;
 }
+
+/* links */
 a {
   text-decoration: none;
   color: goldenrod;
@@ -25,65 +27,34 @@ a:hover {
   background: goldenrod;
 }
 
-.section > h2, p {
-  color: black;
-}
 
-
-/* navbar */
-.navbar {
-  list-style-type: none;
-  font-size: 1rem;
-  background-color: black;
-  border-bottom: 2px solid goldenrod;
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-.navbar-right {
-  display: flex;
-}
-.navbar-a {
-  padding: 1rem;
-  border: 0px;
-}
-.icon {
-  width: clamp(1rem, 10vw, 3rem);
-}
-.active {
-  background-color: goldenrod;
-  color: white;
-}
-
-/* hi */
-#hi-svg {
-  margin-top: 10vh;
-}
-.start {
-  height: 100vh;
-}
 
 /* profile pic */
 .circle {
   border-radius: 50%;
   background: white;
-  width: clamp(9rem, 40%, 55vh);
-  min-width: 14rem;
+  width: clamp(10rem, 40%, 55vh);
+  min-width: 15rem;
   display: flex;
   position: absolute;
   top: 45vh;
   right: 5vw;
 }
-.profilepic {
+.image-in-circle {
   width: 96%;
   padding: 2%;
   border-radius: 50%;
 }
 
 
-/* intro */
+/* start */
+.start {
+  background: #3B4F6C;
+  height: 100vh;
+}
+.start-spacer {
+  height: 20%;
+}
 .intro {
   width: 25vw;
   position: absolute;
@@ -92,118 +63,18 @@ a:hover {
   font-size: 2rem;
 }
 
-/* education */
-.education {
-  margin: 0 4vw;
-}
-.quote {
-  font-size: clamp(1rem, 3vw, 2rem);
-  margin: 0;
-}
-.column {
-  margin: 3vw 3vw;
-}
-.right-align {
-  text-align: end;
-}
-.link-collection {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.link-collection > a {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-.box {
-  background-color: rgba(83, 83, 83, 0.432);
-  padding: 1.5rem;
-  border-radius: 1rem;
-}
-
-
-/* projects */
-.cursive-section {
-  height: 100vh;
-  display: flex;
-}
-#projects-svg {
-  
-}
 
 
 
 
 /* responsive design */
 @media only screen and (min-width: 700px) {
-  .circle {
-    top: 35vh;
-    right: 25vw;
-    width: clamp(10vh, 30%, 55vh);
-  }
-  .intro {
-    left: 18vw;
-    font-size: 2rem;
-  }
-  .education {
-    margin: 0 15vw;
-  }
-  #hi {
-    margin-top: 15vh;
-  }
+  
 }
 @media only screen and (min-width: 1200px) {
-  .circle {
-    right: 28vw;
-  }
-  .intro {
-    top: 70vh;
-  }
-  #hi {
-    margin-top: 7vh;
-  }
-  .column-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .column {
-    width: 45%;
-  }
+  
 }
 @media only screen and (min-width: 1600px) {
-  .intro {
-    top: 80vh;
-  }
-}
-
-
-
-.section {
-  padding: 5vw;
-}
-.parallelogram {
-  background: white;
-  width:100%;
-  padding: 10vw 0;
-  clip-path: polygon(0 calc(10vw), 100% 0, 100% calc(100% - 10vw), 0 100%); 
-}
-.outer-parallelogram {
-  margin: 1rem 0;
-  background: goldenrod;
-  width:100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  clip-path: polygon(0 calc(10vw), 100% 0, 100% calc(100% - 10vw), 0 100%); 
-}
-.external-link {
-  color: goldenrod;
-  border-radius: 500px;
-  padding: 0.5rem 1rem;
-  border: 2px;
-  border-style: solid;
-  border-color: goldenrod;
-}
-.external-link:hover {
-  color: white;
-  background: goldenrod;
+  
 }
 
