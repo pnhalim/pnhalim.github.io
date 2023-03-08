@@ -4,6 +4,8 @@ html, body {
   margin: 0%;
   font-family: Montserrat, sans-serif;
   color: white;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   background: black;
@@ -19,12 +21,13 @@ h3 {
 /* links */
 a {
   text-decoration: none;
-  color: goldenrod;
+  color: white;
   font-size: clamp(1rem, 3vw, 1.2rem);
 }
 a:hover {
-  color: white;
-  background: goldenrod;
+  color: black;
+  background: white;
+  font-weight: bold;
 }
 
 
@@ -46,14 +49,44 @@ a:hover {
   border-radius: 50%;
 }
 
+.navbar {
+  height: 47px;
+  width: 100%;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  justify-content: space-between;
+
+}
+.navbar-icon {
+  height: 35px;
+  padding-top: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.navbar a:hover {
+  background: white;
+}
+
+/* mobile menu */
+#navbar-links {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+}
+#navbar-links a {
+  padding: 12px 28px;
+  text-align: right;
+}
+
 
 /* start */
 .start {
   background: #3B4F6C;
-  height: 100vh;
+  height: calc(100vh - 47px);
 }
 .start-spacer {
-  height: 20%;
+  height: 15%;
 }
 .intro {
   width: 25vw;

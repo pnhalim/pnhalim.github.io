@@ -12,3 +12,6 @@ hi.addEventListener( 'SVGLoad', updateViewBox );
 mq.addEventListener( 'change', updateViewBox );
 updateViewBox()
 
+function openhamburgermenu() {
+  var x = document.getElementById("navbar-links");
+}
