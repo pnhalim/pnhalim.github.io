@@ -4,8 +4,6 @@ html, body {
   margin: 0%;
   font-family: Montserrat, sans-serif;
   color: white;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 body {
   background: black;
@@ -70,8 +68,7 @@ a:hover {
 
 /* mobile menu */
 #navbar-links {
-  /* display: none; */
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 #navbar-links a {
