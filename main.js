@@ -1,6 +1,6 @@
 const hi = document.getElementById("start-hi-svg");
 
-const mq = matchMedia( '( min-width: 700px )' );
+const mq = matchMedia( '( min-width: 800px )' );
 const updateViewBox = () => {
   if (mq.matches) {
     hi.setAttribute( 'viewBox', "300 0 1200 400" );
