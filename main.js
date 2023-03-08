@@ -5,7 +5,7 @@ const updateViewBox = () => {
   if (mq.matches) {
     hi.setAttribute( 'viewBox', "300 0 1200 400" );
   } else {
-    hi.setAttribute( 'viewBox', "400 0 400 400" );
+    hi.setAttribute( 'viewBox', "400 0 400 300" );
   }
 }
 hi.addEventListener( 'SVGLoad', updateViewBox );

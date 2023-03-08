@@ -15,6 +15,9 @@ h3 {
   color: rgb(255, 217, 121);
   margin: 0;
 }
+h2 {
+  font-size: 2rem;
+}
 
 /* links */
 a {
@@ -28,23 +31,29 @@ a:hover {
   font-weight: bold;
 }
 
-
-
-/* profile pic */
+/* general shapes */
 .circle {
   border-radius: 50%;
   background: white;
-  width: clamp(10rem, 40%, 55vh);
-  min-width: 15rem;
+  width: 60%;
   display: flex;
-  position: absolute;
-  top: 45vh;
-  right: 5vw;
 }
 .image-in-circle {
   width: 96%;
   padding: 2%;
   border-radius: 50%;
+}
+.black-rectangle {
+  background: black;
+  padding: 1rem 2rem;
+  margin: 1rem;
+}
+.center-parent {
+  display: flex;
+  justify-content: center;
+}
+.center-text {
+  text-align: center;
 }
 
 .navbar {
@@ -54,7 +63,8 @@ a:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   justify-content: space-between;
-
+  position: fixed;
+  top: 0;
 }
 .navbar-icon {
   height: 35px;
@@ -65,8 +75,7 @@ a:hover {
 .navbar a:hover {
   background: white;
 }
-
-/* mobile menu */
+/* mobile navbar */
 #navbar-links {
   display: none;
   flex-direction: column;
@@ -80,19 +89,24 @@ a:hover {
 /* start */
 .start {
   background: #3B4F6C;
-  height: calc(100vh - 47px);
+  padding-bottom: 5rem;
 }
 .start-spacer {
-  height: 15%;
+  height: 6rem;
 }
-.intro {
-  width: 25vw;
+#start-pic-parent {
+  position: relative;
+}
+#start-pic {
   position: absolute;
-  left: 10vw;
-  top: 65vh;
-  font-size: 2rem;
+  left: calc(20%)
 }
-
+#start-name-intro {
+  padding-top: 120px;
+}
+#arrow-in-circle {
+  padding: 2rem;
+}
 
 
 
