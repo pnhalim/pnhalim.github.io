@@ -57,15 +57,6 @@ ul {
   align-items: end;
 }
 
-.hover-effect {
-  background: linear-gradient(white 0 0) var(--p, 0) / var(--p, 0) no-repeat;
-  transition: .4s, background-position 0s;
-}
-.hover-effect:hover {
-  color: black;
-  --p: 100%;
-}
-
 /* links */
 a {
   text-decoration: none;
@@ -110,6 +101,39 @@ a:hover {
 .center-text {
   text-align: center;
 }
+.image-with-description {
+  overflow: hidden;
+  position: relative
+}
+.image-with-description img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.image-with-description div {
+  position: relative;
+  height: 100%;
+  min-height: 10rem;
+}
+.image-with-description p {
+  padding: 1rem;
+  padding-bottom: 2rem;
+  margin: 0;
+  background: linear-gradient(rgba(50, 50, 50, 0.2), rgba(0, 0, 0, 0)) ;
+}
+.hover-effect:hover p {
+  background: none;
+}
+.hover-effect {
+  background: linear-gradient(white 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: .4s, background-position 0s;
+}
+.hover-effect:hover {
+  color: black;
+  --p: 100%;
+}
+
 
 .navbar {
   height: 47px;
@@ -200,6 +224,7 @@ a:hover {
   font-size: 2.5rem;
   line-height: 45px;
 }
+
 
 
 /* responsive design */
