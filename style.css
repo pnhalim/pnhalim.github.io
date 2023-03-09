@@ -56,6 +56,9 @@ ul {
   flex-direction: column;
   align-items: end;
 }
+.right-align-text {
+  text-align: end;
+}
 
 /* links */
 a {
@@ -103,13 +106,15 @@ a:hover {
 }
 .image-with-description {
   overflow: hidden;
-  position: relative
+  position: relative;
+  max-width: 20rem;
+  margin-bottom: 0.5rem;
 }
 .image-with-description img {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+  left: calc(50% - 10rem);
+  max-width: 20rem;
+  bottom: 0;
 }
 .image-with-description div {
   position: relative;
@@ -118,12 +123,14 @@ a:hover {
 }
 .image-with-description p {
   padding: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   margin: 0;
-  background: linear-gradient(rgba(50, 50, 50, 0.2), rgba(0, 0, 0, 0)) ;
+  background: rgba(0, 0, 0, 0.35);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .hover-effect:hover p {
   background: none;
+  filter: none;
 }
 .hover-effect {
   background: linear-gradient(white 0 0) var(--p, 0) / var(--p, 0) no-repeat;
@@ -178,6 +185,9 @@ a:hover {
 }
 .spacer {
   height: 6rem;
+}
+.spacer-mini {
+  height: 1rem;
 }
 .start-spacer-v2 {
   height: calc(20vw - 2rem);
