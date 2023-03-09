@@ -4,6 +4,7 @@ html, body {
   margin: 0%;
   color: white;
   font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
 }
 body {
   background: black;
@@ -141,7 +142,6 @@ a:hover {
   --p: 100%;
 }
 
-
 .navbar {
   height: 47px;
   width: 100%;
@@ -235,7 +235,135 @@ a:hover {
   line-height: 45px;
 }
 
+/* skills */
+.skills-title {
+  background-color: #3B6C69;
+}
+.skills {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(#3B6C69, #6C3B3B);
+}
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+.skills li {
+  margin-bottom: 0.5rem;
+}
+.skill {
+  padding: 6px 1rem;
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  background: white;
+}
+.bar-100 {
+  --p: calc(100% - 2rem);
+  width: 100%;
+}
+.bar-80 {
+  --p: calc(80% - 2rem);
+  width: 80%;
+}
+.bar-60 {
+  --p: calc(60% - 2rem);
+  width: 60%;
+}
+.bar-40 {
+  --p: calc(40% - 2rem);
+  width: 40%;
+}
+.bar-20 {
+  --p: calc(25% - 2rem);
+  width: 25%;
+}
+.hover-effect-reverse:hover p {
+  background: none;
+  filter: none;
+  color: white; 
+  transition: color .4s;
+}
+.hover-effect-reverse {
+  background: linear-gradient(white 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: .3s, background-position 0s;
+}
+.hover-effect-reverse:hover {
+  color: black;
+  --p: 0%;
+}
 
+/* identity */
+.identity-title {
+  background-color: #6C3B3B;
+}
+.identity {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(#6C3B3B, #926B31);
+}
+.relative-parent {
+  position: relative;
+}
+#prof-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#i-am {
+  position: absolute;
+  top: 14rem;
+  left: calc(50% - 10rem);
+}
+#harvest-pic {
+  padding: 4rem;
+  position: relative;
+  left: calc(50% - 23rem);
+}
+#follower {
+  position: absolute;
+  top: 19rem;
+  left: calc(50% - 8rem);
+}
+#fritas-pic {
+  position: relative;
+  left: calc(50% - 2rem);
+}
+#curious {
+  position: absolute;
+  top: 3rem;
+  left: calc(50% - 10rem);
+}
+#hallowwen-pic {
+  position: relative;
+  left: calc(50% - 18rem);
+}
+#methodical {
+  position: absolute;
+  top: 12rem;
+  left: calc(50% - 6rem);
+}
+#claws-pic {
+  padding: 3rem;
+  position: relative;
+  left: calc(50% - 9rem);
+}
+#ambitious {
+  position: absolute;
+  top: 17rem;
+  left: calc(50% - 10rem);
+}
+#baby-pic {
+  padding: 18vh 8rem;
+  position: relative;
+  left: calc(50% - 19rem);
+}
+#learner {
+  position: absolute;
+  top: 60%;
+  left: calc(50% - 186px);
+  padding: 1rem 6rem;
+}
 
 /* responsive design */
 @media only screen and (min-width: 700px) {
