@@ -354,13 +354,13 @@ a:hover {
   left: calc(50% - 10rem);
 }
 #baby-pic {
-  padding: 18vh 8rem 10vh 8rem;
+  padding: 19vh 8rem 5vh 8rem;
   position: relative;
   left: calc(50% - 300px);
 }
 #learner {
   position: absolute;
-  top: 69%;
+  top: 75%;
   left: calc(50% - 155px);
   padding: 1rem 4rem;
 }
