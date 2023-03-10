@@ -354,15 +354,39 @@ a:hover {
   left: calc(50% - 10rem);
 }
 #baby-pic {
-  padding: 18vh 8rem;
+  padding: 18vh 8rem 10vh 8rem;
   position: relative;
-  left: calc(50% - 19rem);
+  left: calc(50% - 300px);
 }
 #learner {
   position: absolute;
-  top: 60%;
-  left: calc(50% - 186px);
-  padding: 1rem 6rem;
+  top: 69%;
+  left: calc(50% - 155px);
+  padding: 1rem 4rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: white;
+  min-height: 2rem;
+}
+.footer p {
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.icon-button {
+  padding: 0 4px;
+  width: 2rem;
+  height: 2rem;
+  padding-bottom: 1.5rem;
+}
+.icon-button:hover {
+  opacity: 0.7;
+  transition: 0.1s ease-in;
 }
 
 /* responsive design */
