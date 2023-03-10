@@ -377,11 +377,10 @@ a:hover {
   color: black;
   font-weight: bold;
 }
-
 .icon-button {
   padding: 0 4px;
-  width: 2rem;
-  height: 2rem;
+  width: 32px;
+  height: 32px;
   padding-bottom: 1.5rem;
 }
 .icon-button:hover {
