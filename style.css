@@ -80,6 +80,7 @@ a {
   text-decoration: none;
   color: white;
   font-size: clamp(1rem, 3vw, 1.2rem);
+  transition: all 0.4s ease-out;
 }
 a:hover {
   color: black;
@@ -446,6 +447,29 @@ a:hover {
   color: black;
   --p: 0%;
 }
+@media (min-width: 800px) {
+  .skills {
+    padding: 10vw;
+  }
+  .skills .black-rectangle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .skills .black-rectangle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+
 
 /* identity */
 .identity-title {
