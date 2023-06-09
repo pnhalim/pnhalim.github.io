@@ -159,6 +159,31 @@ a:hover {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+/* navbar fullscreen display */
+#navbar-fullscreen-links {
+  display: none;
+  z-index: 99;
+  align-items: center;
+}
+#navbar-fullscreen-links a {
+  padding: 12px 28px;
+  color: black;
+  background-color: white;
+  font-weight: 900;
+  transition: background-color 0.4s ease-out;
+}
+#navbar-fullscreen-links a:hover {
+  color: white;
+  background-color: #333;
+}
+@media (min-width: 600px) {
+  .navbar-burger {
+    display: none;
+  }
+  #navbar-fullscreen-links {
+    display: flex;
+  }
+}
 .navbar a:hover {
   background: white;
 }
