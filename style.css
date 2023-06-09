@@ -61,6 +61,20 @@ ul {
   text-align: end;
 }
 
+/* general full screen */
+.fullscreen {
+  display: none;
+}
+@media (min-width: 800px) {
+  .fullscreen {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
+
 /* links */
 a {
   text-decoration: none;
@@ -207,6 +221,7 @@ a:hover {
 .start {
   background: #3B4F6C;
   padding-bottom: 5rem;
+  max-width: 1280px;
 }
 .spacer {
   height: 6rem;
@@ -230,12 +245,47 @@ a:hover {
 #arrow-in-circle {
   padding: 2rem;
 }
+/* start full screen */
+@media (min-width: 800px) {
+  .start {
+    height: 100vh;
+  }  
+  #start-pic-parent {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+  }
+  #start-pic {
+    position: relative;
+    left: 56vw;
+    width: 55vh;
+    top: 20vh;
+  }
+  #start-name-intro {
+    display: none;
+  }
+  #start-fullscreen-intro {
+    position: relative;
+    top: clamp(55vh, 35vw, 75vh);
+    left: 10vw;
+  }
+  .start-spacer-v2 {
+    display: none;
+  }  
+  #arrow-in-circle {
+    position: absolute;
+    bottom: 1rem;
+    left: calc(50vw - 4rem);
+  }
+}
+
 
 /* education */
 .education {
   padding-top: 2rem;
   padding-bottom: 10rem;
   background-image: linear-gradient(#3B4F6C, #6C3B3B);
+  max-width: 1280px;
 }
 .quote {
   margin: 2rem;
@@ -244,6 +294,38 @@ a:hover {
 }
 .education a:hover {
   color: #3B4F6C;
+}
+/* education fullscreen */
+@media (min-width: 800px) {
+  .education {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .quote-section {
+    width: min(400px, 40vw);
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  .quote-section .link-section {
+    display: grid;
+    justify-items: center;
+  }
+  .education .black-rectangle {
+    width: min(50vw, 450px);
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 1150px) {
+  .quote-section {
+    padding-top: 10rem;
+  }
+  .quote-section .link-section {
+    display: flex;
+  }
 }
 
 /* projects */
@@ -412,15 +494,3 @@ a:hover {
   opacity: 0.7;
   transition: 0.1s ease-in;
 }
-
-/* responsive design */
-@media only screen and (min-width: 700px) {
-  
-}
-@media only screen and (min-width: 1200px) {
-  
-}
-@media only screen and (min-width: 1600px) {
-  
-}
-
