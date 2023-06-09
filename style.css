@@ -111,6 +111,7 @@ a:hover {
   background: black;
   padding: 1rem 2rem;
   margin: 4rem 1rem;
+  z-index: 2;
 }
 .center-parent {
   display: flex;
@@ -221,7 +222,6 @@ a:hover {
 .start {
   background: #3B4F6C;
   padding-bottom: 5rem;
-  max-width: 1280px;
 }
 .spacer {
   height: 6rem;
@@ -285,7 +285,6 @@ a:hover {
   padding-top: 2rem;
   padding-bottom: 10rem;
   background-image: linear-gradient(#3B4F6C, #6C3B3B);
-  max-width: 1280px;
 }
 .quote {
   margin: 2rem;
@@ -341,6 +340,54 @@ a:hover {
   font-size: 2.5rem;
   line-height: 45px;
 }
+.project img {
+  display: none;
+  border: 5px solid white;
+}
+.projects .image-with-description {
+  display: block;
+  margin: 0;
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+}
+@media (min-width: 800px) {
+  .projects .black-rectangle {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+@media (min-width: 980px) {
+  .project {
+    position: relative;
+    min-height: 36rem;
+  }
+  .project .black-rectangle {
+    position: absolute;
+    margin: 0 10vw;
+    width: 400px;
+  }
+  .project img {
+    display: block;
+    width: 30vw;
+    position: absolute;
+    top: 2rem;
+    right: 10vw;
+    z-index: 1;
+  }
+  .project-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .project .black-rectangle {
+    width: 490px;
+  }
+}
 
 /* skills */
 .skills-title {
@@ -389,11 +436,11 @@ a:hover {
   background: none;
   filter: none;
   color: white; 
-  transition: color .4s;
+  transition: color 1s;
 }
 .hover-effect-reverse {
   background: linear-gradient(white 0 0) var(--p, 0) / var(--p, 0) no-repeat;
-  transition: .3s, background-position 0s;
+  transition: 0.6s, background-position 0s;
 }
 .hover-effect-reverse:hover {
   color: black;
