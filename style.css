@@ -480,6 +480,9 @@ a:hover {
   padding-bottom: 10rem;
   background-image: linear-gradient(#6C3B3B, #926B31);
 }
+.identity img {
+  
+}
 .relative-parent {
   position: relative;
 }
@@ -487,10 +490,13 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 7px solid white;
 }
 #i-am {
   position: absolute;
-  top: 14rem;
+  top: 4rem;
   left: calc(50% - 10rem);
 }
 #harvest-pic {
@@ -543,6 +549,48 @@ a:hover {
   padding: 1rem 4rem;
 }
 
+@media (min-width: 1150px) {
+  #harvest-pic {
+    padding: 4rem;
+    position: relative;
+    left: calc(50% - 34rem);
+  }
+  #follower {
+    position: absolute;
+    top: 19rem;
+    left: calc(50% - 18rem);
+  }
+  #fritas-pic {
+    position: relative;
+    left: calc(50% + 10rem);
+  }
+  #curious {
+    position: absolute;
+    top: 3rem;
+    left: calc(50%);
+  }
+  #hallowwen-pic {
+    position: relative;
+    left: calc(50% - 20rem);
+  }
+  #methodical {
+    position: absolute;
+    top: 12rem;
+    left: calc(50% - 8rem);
+  }
+  #claws-pic {
+    padding: 3rem;
+    position: relative;
+    left: calc(50% - 3rem);
+  }
+  #ambitious {
+    position: absolute;
+    top: 17rem;
+    left: calc(50% - 4rem);
+  }
+}
+
+
 .footer {
   width: 100%;
   background-color: white;
@@ -554,6 +602,9 @@ a:hover {
   padding-bottom: 0.5rem;
   color: black;
   font-weight: bold;
+}
+.footer img {
+  cursor: pointer;
 }
 .icon-button {
   padding: 0 4px;
