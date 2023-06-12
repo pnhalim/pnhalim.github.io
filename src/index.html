@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Patrick Halim | Home</title>
+
+  <meta name="keywords" content="Patrick, Halim, Patrick Halim, Portfolio">
+  <meta name="description" content="Personal Portfolio Website">
+  <meta name="author" content="Patrick Halim">
+
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/loco.css">
+</head>
+<body>
+  <div class="navbar">
+    <img class="navbar-icon" src="assets/icon.svg">
+    <img class="navbar-icon navbar-burger" src="assets/burger_menu_icon.svg" onclick="openhamburgermenu()">
+    <div id="navbar-fullscreen-links">
+      <a href="#">projects</a>
+      <a href="assets/Resume-Patrick-Halim.pdf">resume</a>
+      <a href="#">contact</a>
+    </div>
+  </div>
+  <div id="navbar-links">
+    <a href="#">projects</a>
+    <a href="#">resume</a>
+    <a href="#">contact</a>
+  </div>
+  <div data-scroll-container>
+    <div class="start">
+      <div class="spacer"></div>
+      <svg id="start-hi-svg" 
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewbox="400 0 400 300">
+        <path d="M-446 -1083.179C-135.0972 386.043 454.9987 255.813 513.298 134.05C541.387 75.3818 572.91 15.8382 559.338 15.8382C525.188 15.8382 506.185 188.446 502.859 198.979C499.5327 209.512 616.254 7.95745 582.104 173.016C552.393 316.623 619.644 199.071 668.892 120.534C637.847 172.831 622.215 284.735 739.021 198.979C978.77 22.9627 1127.191 -86.174 1424.79 111.941C1636.68 252.999 1717.6 251.276 1720 253.308 " stroke="white" stroke-width="11" fill="#3B4F6C"/>
+        <path d="M681.99999 88.6594L688 78" stroke="white" stroke-width="11"/>
+      </svg>
+      <div id="start-pic-parent">
+        <div class="fullscreen" id="start-fullscreen-intro"><h2>I'm Patrick Halim</h2></div>
+        <div id="start-pic" class="circle">
+          <img class="image-in-circle" src="assets/ProfilePicSquare.jpg" alt="Image of Me">
+        </div>
+      </div>
+      <div class="start-spacer-v2"></div>
+      <div class="start-black-rectangle black-rectangle center-parent" id="start-name-intro"><h2>I'm Patrick Halim</h2></div>
+      <div id="arrow-in-circle" class="center-parent"><img src="assets/arrow-in-circle.png"></div>
+    </div>
+    <div class="education">
+      <div class="quote-section">
+        <h3 class="quote">I'm DRIVEN by a desire to CREATE things that are <em>innovative</em> and <em>socially-impactful</em></h3>
+        <div class="center-parent link-section">
+          <a class="capsule-button" href="#">resume</a>
+          <a class="capsule-button" href="#">linkedin</a>
+          <a class="capsule-button" href="#">github</a>
+        </div>
+      </div>
+      <div class="black-rectangle">
+        <h1 class="center-text underline">EDUCATION</h1>
+        <p><b>University of Michigan</b>
+        B.S. Computer Science</p>
+        <h4>GPA</h4>
+        <ul><li>4.0 / 4.0</li></ul>
+        <h4>Coursework</h4>
+        <ul><li>EECS 281 - Data Structures and Algorithms</li>
+          <li>EECS 445 - Machine Learning</li>
+          <li>EECS 376 - Foundations of Computer Science</li>
+          <li>EECS 498 - XR Development Capstone</li>
+          <li>EECS 370 - Computer Organization</li>
+          <li>EEFCS 203 - Discrete Mathematics</li>
+          <li>MATH 214 - Linear Algebra</li>
+          <li>EECS 201 - Coputer Science Pragmatics</li></ul>
+        <h4>Honors and Awards</h4>
+        <ul><li>Eagle Scout</li>
+          <li>Cisco Design Challenge 1st Place Winner</li>
+          <li>Angell Scholar</li>
+          <li>Freshman Branstorm Prize</li></ul>
+      </div>
+    </div>
+    <div class="title-page projects-title">
+      <h1 class="center-text hover-effect">PROJECTS</h1>
+    </div>
+    <div class="projects">
+      <div class="project" style="height: 45rem;">
+        <div class="black-rectangle">
+          <h1 class="underline">Developing AR interfaces for NASA astronauts</h1>
+          <p>I lead the <b>Collaborative Lab for Advancing Work in Space</b>, a project team at the University of Michigan.</p>
+          Our mission is to develop <b>augmented reality interfaces</b> to asist astronauts in critical mission tasks such as
+            <ul><li>navigation</li>
+              <li>search and rescue</li>
+              <li>task management</li>
+              <li>geological sampling</li>
+              <li>tracking vitals</li>
+              <li>messaging and communication</li>
+            </ul>
+          <p>Read more about my roles as the:</p>
+          <div class="justify-right-parent">
+            <a href="" class="capsule-button">project manager</a>
+            <a href="" class="capsule-button">AR development lead</a>
+          </div>
+          <p></p>
+        </div>
+        <div class="project-images">
+          <img src="assets/proj-claws-rockyard1.jpg" alt="Pic at NASA JSC Rock Testing Yard" style="right: 5vw;">
+          <img src="assets/proj-claws-group.jpg" alt="Group Pic at NASA JSC" style="top: 21rem;">
+        </div>
+      </div>
+      <div class="project" style="height: 36rem;">
+        <div class="black-rectangle">
+          <h1 class="underline">Creating an automation GUI for vehicle testing</h1>
+          <p>During my 2022 summer internship at Bosch, I <b>developed a Python GUI</b> to automate a vehicle testing procedure, leading to <b>4 times increased vehicle testing capacity.</b></p>
+          My task required me to 
+            <ul><li>find the root cause of a roadblock</li>
+              <li>investigate potential solutions</li>
+              <li>automate my solution</li>
+            </ul>
+          <p>Read more about my Bosch internship here:</p>
+          <div class="justify-right-parent">
+            <a href="" class="capsule-button">intern at Bosch</a>
+          </div>
+          <p></p>
+        </div>
+        <div class="project-images">
+          <img src="assets/proj-bosch-cyclone.png" alt="Pic at NASA JSC Rock Testing Yard" style="right: 5vw; top: 5rem;">
+        </div>
+      </div>
+      
+      <div class="black-rectangle">
+        <h1 class="underline">And so many more...</h1>
+        <p>I love <b>creating</b> things and <b>learning</b> new things, so I've made many projects:</p>
+        <div class="project-gallery">
+          <div class="image-with-description">
+            <img src="assets/king-of-highschool.png" alt="">
+            <div class="hover-effect"><p>A <b>video game</b> about high school archetypes</p></div>
+          </div>
+          <div class="image-with-description">
+            <img src="assets/munchin.png" alt="">
+            <div class="hover-effect"><p>A <b>web app</b> combining LinkedIn and food</p></div>
+          </div>
+          <div class="image-with-description">
+            <img src="assets/arcmed.png" alt="">
+            <div class="hover-effect"><p>A <b>mobile app</b> to help nursing home caregivers</p></div>
+          </div>
+          <div class="image-with-description">
+            <img src="assets/piano.png" alt="">
+            <div class="hover-effect"><p>A <b>python GUI</b> to help beginners learn how to play piano</p></div>
+          </div>
+        </div>
+        <div class="spacer-mini"></div>
+        <p>See all my projects here:</p>
+        <div class="justify-right-parent">
+          <a href="" class="capsule-button">project catalog</a>
+        </div>
+        <p></p>
+      </div>
+    </div>
+    <div class="title-page skills-title">
+      <h1 class="center-text hover-effect">SKILLS</h1>
+    </div>
+    <div class="skills">
+      <div class="black-rectangle">
+        <h1 class="underline">Technical Skills</h1>
+        <ul>
+          <li class="hover-effect-reverse bar-100"><p class="skill">C++</p></li>
+          <li class="hover-effect-reverse bar-80"><p class="skill">C#</p></li>
+          <li class="hover-effect-reverse bar-60"><p class="skill">C</p></li>
+          <li class="hover-effect-reverse bar-80"><p class="skill">Python</p></li>
+          <li class="hover-effect-reverse bar-40"><p class="skill">Java</p></li>
+          <li class="hover-effect-reverse bar-60"><p class="skill">HTML/CSS</p></li>
+          <li class="hover-effect-reverse bar-20"><p class="skill">JavaSript</p></li>
+          <li class="hover-effect-reverse bar-40"><p class="skill">Bash</p></li>
+          <li class="hover-effect-reverse bar-100"><p class="skill">Git</p></li>
+          <li class="hover-effect-reverse bar-100"><p class="skill">Unity</p></li>
+          <li class="hover-effect-reverse bar-60"><p class="skill">Unreal Engine</p></li>
+          <li class="hover-effect-reverse bar-40"><p class="skill">React</p></li>
+          <li class="hover-effect-reverse bar-40"><p class="skill">Docker</p></li>
+          <li class="hover-effect-reverse bar-100"><p class="skill">Unix/WSL</p></li>
+        </ul>
+        <div class="spacer-mini"></div>
+      </div>
+      <div class="black-rectangle">
+        <h1 class="underline">Soft Skills</h1>
+        <ul>
+          <li class="hover-effect-reverse bar-100"><p class="skill">Desire to Learn</p></li>
+          <li class="hover-effect-reverse bar-80"><p class="skill">Collaboration</p></li>
+          <li class="hover-effect-reverse bar-80"><p class="skill">Self-Initiative</p></li>
+          <li class="hover-effect-reverse bar-80"><p class="skill">Leadership</p></li>
+          <li class="hover-effect-reverse bar-60"><p class="skill">Team Management</p></li>
+          <li class="hover-effect-reverse bar-60"><p class="skill">Communication</p></li>
+        </ul>
+        <div class="spacer-mini"></div>
+      </div>
+      
+    </div>
+    <div class="title-page identity-title">
+      <h1 class="center-text hover-effect">IDENTITY</h1>
+    </div>
+    <div class="identity">
+      <div class="relative-parent">
+        <img id="prof-pic" src="assets/TallPhotoSquare.jpg" alt="" width="370px">
+        <div id="i-am" class="black-rectangle"><b>I am...</b></div>
+      </div>
+      <div class="relative-parent">
+        <img id="harvest-pic" src="assets/harvest.png" alt="">
+        <div id="follower" class="black-rectangle"><b>a follower of Christ</b></div>
+      </div>
+      <div class="relative-parent">
+        <img id="fritas-pic" src="assets/fritas.png" alt="">
+        <div id="curious" class="black-rectangle"><b>curious, thus<br>adventurous</b></div>
+      </div>
+      <div class="relative-parent">
+        <img id="hallowwen-pic" src="assets/gang.png" alt="">
+        <div id="methodical" class="black-rectangle"><b>methodical, <br> yet creative</b></div>
+      </div>
+      <div class="relative-parent">
+        <img id="claws-pic" src="assets/claws-squidgame.png" alt="">
+        <div id="ambitious" class="black-rectangle"><b>sometimes too <br>ambitious</b></div>
+      </div>
+      <div class="relative-parent">
+        <img id="baby-pic" src="assets/baby.png" alt="">
+        <div id="learner" class="black-rectangle"><b>a lifelong learner</b></div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="center-text">Copyright &copy 2023 Patrick Halim</p>
+      <div class="center-parent">
+        <img class="icon-button" src="assets/github.png" alt="">
+        <img class="icon-button" src="assets/email.png" alt="">
+        <img class="icon-button" src="assets/linkedin.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  
+  
+</body>
+<script src="main.js"></script>
+<script src="loco.js"></script>
+</html>
