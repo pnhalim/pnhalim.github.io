@@ -30,7 +30,7 @@
     <a href="#">resume</a>
     <a href="#">contact</a>
   </div>
-  <div data-scroll-container>
+  <div data-scroll-container style="position:fixed">
     <div data-scroll-section class="start">
       <div class="spacer"></div>
       <svg id="start-hi-svg" 
@@ -42,16 +42,16 @@
       </svg>
       <div id="start-pic-parent">
         <div class="fullscreen" id="start-fullscreen-intro"><h2>I'm Patrick Halim</h2></div>
-        <div id="start-pic" class="circle">
+        <div data-scroll data-scroll-speed="2" id="start-pic" class="circle">
           <img class="image-in-circle" src="assets/ProfilePicSquare.jpg" alt="Image of Me">
         </div>
       </div>
       <div class="start-spacer-v2"></div>
-      <div class="start-black-rectangle black-rectangle center-parent" id="start-name-intro"><h2>I'm Patrick Halim</h2></div>
+      <div data-scroll data-scroll-offset class="black-rectangle center-parent" id="start-name-intro"><h2>I'm Patrick Halim</h2></div>
       <div id="arrow-in-circle" class="center-parent"><img src="assets/arrow-in-circle.png"></div>
     </div>
     <div data-scroll-section class="education">
-      <div class="quote-section">
+      <div data-scroll data-scroll-speed="0.1" class="quote-section">
         <h3 class="quote">I'm DRIVEN by a desire to CREATE things that are <em>innovative</em> and <em>socially-impactful</em></h3>
         <div class="center-parent link-section">
           <a class="capsule-button" href="#">resume</a>
@@ -59,7 +59,7 @@
           <a class="capsule-button" href="#">github</a>
         </div>
       </div>
-      <div class="black-rectangle">
+      <div data-scroll data-scroll-speed="2" class="black-rectangle">
         <h1 class="center-text underline">EDUCATION</h1>
         <p><b>University of Michigan</b>
         B.S. Computer Science</p>
@@ -230,13 +230,13 @@
           <div id="learner" class="black-rectangle"><b>a lifelong learner</b></div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <p class="center-text">Copyright &copy 2023 Patrick Halim</p>
-      <div class="center-parent">
-        <img class="icon-button" src="assets/github.png" alt="">
-        <img class="icon-button" src="assets/email.png" alt="">
-        <img class="icon-button" src="assets/linkedin.png" alt="">
+      <div class="footer">
+        <p class="center-text">Copyright &copy 2023 Patrick Halim</p>
+        <div class="center-parent">
+          <img class="icon-button" src="assets/github.png" alt="">
+          <img class="icon-button" src="assets/email.png" alt="">
+          <img class="icon-button" src="assets/linkedin.png" alt="">
+        </div>
       </div>
     </div>
   </div>
