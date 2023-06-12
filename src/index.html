@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/loco.css">
 </head>
 <body>
-  <div class="navbar">
+  <div id="navbar" class="navbar fade-in-2">
     <img class="navbar-icon" src="assets/icon.svg">
     <img class="navbar-icon navbar-burger" src="assets/burger_menu_icon.svg" onclick="openhamburgermenu()">
     <div id="navbar-fullscreen-links">
@@ -31,7 +31,7 @@
     <a href="#">contact</a>
   </div>
   <div data-scroll-container style="position:fixed">
-    <div data-scroll-section class="start">
+    <div id="start" data-scroll-section class="start fade-in-0">
       <div class="spacer"></div>
       <svg id="start-hi-svg" 
         xmlns="http://www.w3.org/2000/svg"
@@ -41,17 +41,17 @@
         <path d="M681.99999 88.6594L688 78" stroke="white" stroke-width="11"/>
       </svg>
       <div id="start-pic-parent">
-        <div class="fullscreen" id="start-fullscreen-intro"><h2>I'm Patrick Halim</h2></div>
-        <div data-scroll data-scroll-speed="2" id="start-pic" class="circle">
+        <div class="fade-in-3 fullscreen" data-scroll data-scroll-class="fade-in-active" id="start-fullscreen-intro"><h2>I'm Patrick Halim</h2></div>
+        <div data-scroll data-scroll-speed="2" data-scroll-class="fade-in-active" id="start-pic" class="fade-in-2 circle">
           <img class="image-in-circle" src="assets/ProfilePicSquare.jpg" alt="Image of Me">
         </div>
       </div>
       <div class="start-spacer-v2"></div>
-      <div data-scroll data-scroll-offset class="black-rectangle center-parent" id="start-name-intro"><h2>I'm Patrick Halim</h2></div>
+      <div class="black-rectangle center-parent fade-in-0" data-scroll data-scroll-class="fade-in-active" id="start-name-intro"><h2>I'm Patrick Halim</h2></div>
       <div id="arrow-in-circle" class="center-parent"><img src="assets/arrow-in-circle.png"></div>
     </div>
     <div data-scroll-section class="education">
-      <div data-scroll data-scroll-speed="0.1" class="quote-section">
+      <div class="quote-section fade-in-1" data-scroll data-scroll-class="fade-in-active">
         <h3 class="quote">I'm DRIVEN by a desire to CREATE things that are <em>innovative</em> and <em>socially-impactful</em></h3>
         <div class="center-parent link-section">
           <a class="capsule-button" href="#">resume</a>
@@ -59,7 +59,7 @@
           <a class="capsule-button" href="#">github</a>
         </div>
       </div>
-      <div data-scroll data-scroll-speed="2" class="black-rectangle">
+      <div data-scroll data-scroll-speed="4" class="black-rectangle fade-in-05" data-scroll data-scroll-class="fade-in-active">
         <h1 class="center-text underline">EDUCATION</h1>
         <p><b>University of Michigan</b>
         B.S. Computer Science</p>
@@ -82,12 +82,12 @@
       </div>
     </div>
     <div data-scroll-section>
-      <div class="title-page projects-title">
-        <h1 class="center-text hover-effect">PROJECTS</h1>
+      <div class="title-page projects-title hover-effect">
+        <h1 class="center-text fade-in-1" data-scroll data-scroll-class="fade-in-active" data-scroll-repeat="true">PROJECTS</h1>
       </div>
       <div class="projects">
         <div class="project" style="height: 45rem;">
-          <div class="black-rectangle">
+          <div class="black-rectangle fade-in-05" data-scroll data-scroll-speed="2" data-scroll-class="fade-in-active">
             <h1 class="underline">Developing AR interfaces for NASA astronauts</h1>
             <p>I lead the <b>Collaborative Lab for Advancing Work in Space</b>, a project team at the University of Michigan.</p>
             Our mission is to develop <b>augmented reality interfaces</b> to asist astronauts in critical mission tasks such as
@@ -106,12 +106,12 @@
             <p></p>
           </div>
           <div class="project-images">
-            <img src="assets/proj-claws-rockyard1.jpg" alt="Pic at NASA JSC Rock Testing Yard" style="right: 5vw;">
-            <img src="assets/proj-claws-group.jpg" alt="Group Pic at NASA JSC" style="top: 21rem;">
+            <img data-scroll data-scroll-speed="6" src="assets/proj-claws-rockyard1.jpg" alt="Pic at NASA JSC Rock Testing Yard" style="right: 5vw;">
+            <img data-scroll data-scroll-speed="10" src="assets/proj-claws-group.jpg" alt="Group Pic at NASA JSC" style="top: 18rem;">
           </div>
         </div>
         <div class="project" style="height: 36rem;">
-          <div class="black-rectangle">
+          <div class="black-rectangle fade-in-05" data-scroll data-scroll-speed="2" data-scroll-class="fade-in-active">
             <h1 class="underline">Creating an automation GUI for vehicle testing</h1>
             <p>During my 2022 summer internship at Bosch, I <b>developed a Python GUI</b> to automate a vehicle testing procedure, leading to <b>4 times increased vehicle testing capacity.</b></p>
             My task required me to 
@@ -126,13 +126,13 @@
             <p></p>
           </div>
           <div class="project-images">
-            <img src="assets/proj-bosch-cyclone.png" alt="Pic at NASA JSC Rock Testing Yard" style="right: 5vw; top: 5rem;">
+            <img data-scroll data-scroll-speed="5" src="assets/proj-bosch-cyclone.png" alt="Pic of Bosch tool that I made" style="right: 5vw; top: 7rem;">
           </div>
         </div>
         
-        <div class="black-rectangle">
+        <div data-scroll data-scroll-speed="4" class="black-rectangle fade-in-05" data-scroll-class="fade-in-active">
           <h1 class="underline">And so many more...</h1>
-          <p>I love <b>creating</b> things and <b>learning</b> new things, so I've made many projects:</p>
+          <p class="fade-in-05" data-scroll data-scroll-class="fade-in-active">I love <b>creating</b> things and <b>learning</b> new things, so I've made many projects:</p>
           <div class="project-gallery">
             <div class="image-with-description">
               <img src="assets/king-of-highschool.png" alt="">
@@ -161,13 +161,13 @@
       </div>
     </div>
     <div data-scroll-section>
-      <div class="title-page skills-title">
-        <h1 class="center-text hover-effect">SKILLS</h1>
+      <div class="title-page skills-title hover-effect">
+        <h1 class="center-text fade-in-1" data-scroll data-scroll-class="fade-in-active" data-scroll-repeat="true">SKILLS</h1>
       </div>
       <div class="skills">
-        <div class="black-rectangle">
+        <div class="black-rectangle fade-in-05" data-scroll data-scroll-speed="4" data-scroll-class="fade-in-active">
           <h1 class="underline">Technical Skills</h1>
-          <ul>
+          <ul class="fade-in-05" data-scroll data-scroll-class="fade-in-active">
             <li class="hover-effect-reverse bar-100"><p class="skill">C++</p></li>
             <li class="hover-effect-reverse bar-80"><p class="skill">C#</p></li>
             <li class="hover-effect-reverse bar-60"><p class="skill">C</p></li>
@@ -185,9 +185,9 @@
           </ul>
           <div class="spacer-mini"></div>
         </div>
-        <div class="black-rectangle">
+        <div class="black-rectangle fade-in-2" data-scroll data-scroll-speed="4" data-scroll-class="fade-in-active">
           <h1 class="underline">Soft Skills</h1>
-          <ul>
+          <ul class="fade-in-05" data-scroll data-scroll-class="fade-in-active">
             <li class="hover-effect-reverse bar-100"><p class="skill">Desire to Learn</p></li>
             <li class="hover-effect-reverse bar-80"><p class="skill">Collaboration</p></li>
             <li class="hover-effect-reverse bar-80"><p class="skill">Self-Initiative</p></li>
@@ -201,33 +201,33 @@
       </div>
     </div>
     <div data-scroll-section>
-    <div class="title-page identity-title">
-      <h1 class="center-text hover-effect">IDENTITY</h1>
+    <div class="title-page identity-title hover-effect">
+      <h1 class="center-text fade-in-1" data-scroll data-scroll-class="fade-in-active" data-scroll-repeat="true">IDENTITY</h1>
       </div>
       <div class="identity">
-        <div class="relative-parent">
+        <div data-scroll data-scroll-speed="2" class="relative-parent">
           <img id="prof-pic" src="assets/TallPhotoSquare.jpg" alt="" width="370px">
-          <div id="i-am" class="black-rectangle"><b>I am...</b></div>
+          <div data-scroll data-scroll-speed="2" id="i-am" class="black-rectangle fade-in-05" data-scroll-class="fade-in-active"><b>I am...</b></div>
         </div>
-        <div class="relative-parent">
+        <div data-scroll data-scroll-speed="4" class="relative-parent">
           <img id="harvest-pic" src="assets/harvest.png" alt="">
-          <div id="follower" class="black-rectangle"><b>a follower of Christ</b></div>
+          <div data-scroll data-scroll-speed="2" id="follower" class="black-rectangle fade-in-05" data-scroll-class="fade-in-active"><b>a follower of Christ</b></div>
         </div>
-        <div class="relative-parent">
+        <div data-scroll data-scroll-speed="3" class="relative-parent">
           <img id="fritas-pic" src="assets/fritas.png" alt="">
-          <div id="curious" class="black-rectangle"><b>curious, thus<br>adventurous</b></div>
+          <div data-scroll data-scroll-speed="2" id="curious" class="black-rectangle"><b>curious, thus<br>adventurous</b></div>
         </div>
-        <div class="relative-parent">
+        <div data-scroll data-scroll-speed="2" class="relative-parent">
           <img id="hallowwen-pic" src="assets/gang.png" alt="">
-          <div id="methodical" class="black-rectangle"><b>methodical, <br> yet creative</b></div>
+          <div data-scroll data-scroll-speed="3" id="methodical" class="black-rectangle fade-in-05" data-scroll-class="fade-in-active"><b>methodical, <br> yet creative</b></div>
         </div>
-        <div class="relative-parent">
+        <div data-scroll data-scroll-speed="4" class="relative-parent">
           <img id="claws-pic" src="assets/claws-squidgame.png" alt="">
-          <div id="ambitious" class="black-rectangle"><b>sometimes too <br>ambitious</b></div>
+          <div data-scroll data-scroll-speed="2" id="ambitious" class="black-rectangle fade-in-05" data-scroll-class="fade-in-active"><b>sometimes too <br>ambitious</b></div>
         </div>
         <div class="relative-parent">
           <img id="baby-pic" src="assets/baby.png" alt="">
-          <div id="learner" class="black-rectangle"><b>a lifelong learner</b></div>
+          <div data-scroll data-scroll-speed="2" id="learner" class="black-rectangle"><b>a lifelong learner</b></div>
         </div>
       </div>
       <div class="footer">

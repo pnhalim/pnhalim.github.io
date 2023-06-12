@@ -20,3 +20,8 @@ function openhamburgermenu() {
     x.style.display = "flex";
   }
 }
+
+window.onload = function() {
+  document.getElementById('navbar').className += " fade-in-active"
+  document.getElementById('start').className += " fade-in-active"
+}
