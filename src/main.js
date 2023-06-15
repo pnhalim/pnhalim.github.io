@@ -20,6 +20,8 @@ function openhamburgermenu() {
     x.style.display = "flex";
   }
 }
+document.getElementById("navbar-burger").addEventListener("click", openhamburgermenu)
+
 
 window.onload = function() {
   document.getElementById('navbar').className += " fade-in-active"

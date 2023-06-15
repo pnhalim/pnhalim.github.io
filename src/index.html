@@ -20,7 +20,7 @@
 <body>
   <div id="navbar" class="navbar fade-in-2">
     <img class="navbar-icon" src="assets/icon.svg">
-    <img class="navbar-icon navbar-burger" src="assets/burger_menu_icon.svg" onclick="openhamburgermenu()">
+    <img class="navbar-icon navbar-burger" id="navbar-burger" src="assets/burger_menu_icon.svg">
     <div id="navbar-fullscreen-links">
       <a href="#">projects</a>
       <a href="assets/Resume-Patrick-Halim.pdf">resume</a>
@@ -29,7 +29,7 @@
   </div>
   <div id="navbar-links">
     <a href="#">projects</a>
-    <a href="#">resume</a>
+    <a href="assets/Resume-Patrick-Halim.pdf">resume</a>
     <a href="#">contact</a>
   </div>
   <div data-scroll-container>
@@ -52,7 +52,7 @@
       <div class="black-rectangle center-parent fade-in-3" data-scroll data-scroll-class="fade-in-active" id="start-name-intro"><h2>I'm Patrick Halim</h2></div>
       <div id="arrow-in-circle" class="center-parent"><img src="assets/arrow-in-circle.png"></div>
     </div>
-    <div data-scroll-section class="education">
+    <div data-scroll-section id="education" class="education">
       <div class="quote-section fade-in-1" data-scroll data-scroll-class="fade-in-active">
         <h3 class="quote">I'm DRIVEN by a desire to CREATE things that are <em>innovative</em> and <em>socially-impactful</em></h3>
         <div class="center-parent link-section">
@@ -169,7 +169,7 @@
       <div class="skills">
         <div class="black-rectangle fade-in-05" data-scroll data-scroll-speed="4" data-scroll-class="fade-in-active">
           <h1 class="underline">Technical Skills</h1>
-          <ul class="fade-in-05" data-scroll data-scroll-class="fade-in-active">
+          <ul>
             <li class="hover-effect-reverse bar-100"><p class="skill">C++</p></li>
             <li class="hover-effect-reverse bar-80"><p class="skill">C#</p></li>
             <li class="hover-effect-reverse bar-60"><p class="skill">C</p></li>
@@ -189,7 +189,7 @@
         </div>
         <div class="black-rectangle fade-in-1" data-scroll data-scroll-speed="4" data-scroll-class="fade-in-active">
           <h1 class="underline">Soft Skills</h1>
-          <ul class="fade-in-05" data-scroll data-scroll-class="fade-in-active">
+          <ul>
             <li class="hover-effect-reverse bar-100"><p class="skill">Desire to Learn</p></li>
             <li class="hover-effect-reverse bar-80"><p class="skill">Collaboration</p></li>
             <li class="hover-effect-reverse bar-80"><p class="skill">Self-Initiative</p></li>

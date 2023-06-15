@@ -1,2 +1,0 @@
-const e=document.getElementById("start-hi-svg"),t=matchMedia("( min-width: 800px )"),a=()=>{t.matches?e.setAttribute("viewBox","370 -30 1100 400"):e.setAttribute("viewBox","400 0 400 300")};e.addEventListener("SVGLoad",a),t.addEventListener("change",a),a(),window.onload=function(){document.getElementById("navbar").className+=" fade-in-active",document.getElementById("start").className+=" fade-in-active"};
-//# sourceMappingURL=index.50d89cc6.js.map

@@ -214,7 +214,7 @@ a:hover {
   width: 100%;
 }
 #navbar-links a {
-  padding: 12px 28px;
+  padding: 18px 28px;
   text-align: right;
 }
 
@@ -239,14 +239,18 @@ a:hover {
 #start-pic {
   position: absolute;
   left: calc(20%);
-  top: -4vh;
+  top: -5vh;
   z-index: 10;
 }
 #start-name-intro {
-  padding-top: 32vw;
+  padding-top: 25vw;
+}
+#start-name-intro h2 {
+  font-size: 1.75rem;
 }
 #arrow-in-circle {
   padding: 2rem;
+  cursor: pointer;
 }
 /* start full screen */
 @media (min-width: 800px) {
