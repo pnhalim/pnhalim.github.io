@@ -238,7 +238,9 @@ a:hover {
 }
 #start-pic {
   position: absolute;
-  left: calc(20%)
+  left: calc(20%);
+  top: -4vh;
+  z-index: 10;
 }
 #start-name-intro {
   padding-top: 32vw;

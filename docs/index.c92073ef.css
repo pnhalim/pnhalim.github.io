@@ -270,7 +270,9 @@ a:hover {
 }
 
 #start-pic {
+  z-index: 10;
   position: absolute;
+  top: -4vh;
   left: 20%;
 }
 
