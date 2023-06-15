@@ -6,7 +6,7 @@ const scroll = new LocomotiveScroll({
     multiplier: 0.5,
     reloadOnContextChange: true,
     smartphone: {
-        smooth: true
+        smooth: false
     },
     tablet: {
         smooth: true
