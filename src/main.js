@@ -12,18 +12,16 @@ hi.addEventListener( 'SVGLoad', updateViewBox );
 mq.addEventListener( 'change', updateViewBox );
 updateViewBox()
 
-function openhamburgermenu() {
-  var x = document.getElementById("navbar-links");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
-}
-document.getElementById("navbar-burger").addEventListener("click", openhamburgermenu)
 
+const mobile_menu = document.querySelector('.mobile-menu');
+const btn = mobile_menu.querySelector('.nav-tgl');
+btn.addEventListener('click', evt => {
+	mobile_menu.classList.toggle('active');
+})
 
 window.onload = function() {
   document.getElementById('navbar').className += " fade-in-active"
   document.getElementById('start').className += " fade-in-active"
 }
+
+// TODO add function for class main-logo to go to home page

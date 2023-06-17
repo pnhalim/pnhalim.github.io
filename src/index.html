@@ -18,19 +18,27 @@
   <script type="module" src="loco.js"></script>
 </head>
 <body>
+  <div class="mobile-menu">
+    <!-- credit: https://codepen.io/ahmedhrayyan/pen/EremLG -->
+    <button class="nav-tgl" type="button" aria-label="toggle menu">
+      <span aria-hidden="true"></span>
+    </button>
+    <img class="main-logo" src="assets/icon.svg">
+    <nav class="nav">
+      <ul>
+        <li><a href="#">projects</a></li>
+        <li><a href="assets/Resume-Patrick-Halim.pdf">resume</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+  </div>
   <div id="navbar" class="navbar fade-in-2">
-    <img class="navbar-icon" src="assets/icon.svg">
-    <img class="navbar-icon navbar-burger" id="navbar-burger" src="assets/burger_menu_icon.svg">
+    <img class="main-logo" src="assets/icon.svg">
     <div id="navbar-fullscreen-links">
       <a href="#">projects</a>
       <a href="assets/Resume-Patrick-Halim.pdf">resume</a>
       <a href="#">contact</a>
     </div>
-  </div>
-  <div id="navbar-links">
-    <a href="#">projects</a>
-    <a href="assets/Resume-Patrick-Halim.pdf">resume</a>
-    <a href="#">contact</a>
   </div>
   <div data-scroll-container>
     <div id="start" data-scroll-section class="start fade-in-0">
