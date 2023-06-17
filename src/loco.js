@@ -3,7 +3,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true, 
-    multiplier: 0.5,
+    multiplier: 0.7,
     reloadOnContextChange: true,
     smartphone: {
         smooth: false
@@ -13,21 +13,13 @@ const scroll = new LocomotiveScroll({
     }
 });
 
-function scrollToEducation() {
-    const n = document.getElementById("education");
-    scroll.scrollTo(n);
-    scroll.update();
-}
-document.getElementById("arrow-in-circle").addEventListener("click", scrollToEducation)
-
-
 new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"))
 
-
-/// TODO modularize
 function changeColor(color) {
     document.body.style.backgroundColor = color;
 }
 scroll.on('call', color => {
     changeColor(color)
 });
+
+export { scroll };
