@@ -153,6 +153,9 @@ a:hover {
   grid-template-columns: auto auto;
   gap: 0.5rem;
 }
+.projects ol li {
+  padding: 5px 0;
+}
 @media (min-width: 800px) {
   .projects .black-rectangle {
     margin-left: 10vw;
