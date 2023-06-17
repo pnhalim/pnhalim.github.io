@@ -1,0 +1,19 @@
+body {
+    background-color: #926B31;
+}
+.page {
+    margin-left: 1rem;
+    width: calc(100vw - 1rem);
+    background-color: white;
+    min-height: 100vh;
+}  
+@media (min-width: 800px) {
+    .page {
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+        width: clamp(80vw, 80vw, 1200px);
+        min-height: 100vh;
+        border: none;
+        border-radius: 2px;
+    }  
+}

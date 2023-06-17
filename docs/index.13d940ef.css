@@ -4,17 +4,20 @@
 
 .mobile-menu .main-logo {
   z-index: 102;
-  background-color: #fff3;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ffffffe6;
   width: 70px;
   height: 70px;
-  transition: background-color .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
   position: fixed;
   top: 1.5rem;
   left: 1.5rem;
 }
 
 .mobile-menu.active .main-logo {
-  background-color: #ffffffe6;
+  visibility: visible;
+  opacity: 1;
 }
 
 .nav {
@@ -54,10 +57,10 @@
 .nav-tgl {
   cursor: pointer;
   z-index: 102;
+  background-color: none;
   text-align: center;
-  background-color: #000c;
+  background-color: #00000080;
   border: none;
-  border-radius: 50%;
   width: 70px;
   height: 70px;
   padding: 0;
@@ -70,7 +73,7 @@
 
 .nav-tgl > span {
   vertical-align: middle;
-  background: #7c898b;
+  background: #fff;
   border-radius: 1px;
   width: 34px;
   height: 2px;
@@ -80,7 +83,7 @@
 
 .nav-tgl > span:before, .nav-tgl > span:after {
   content: "";
-  background: #7c898b;
+  background: #fff;
   border-radius: 1px;
   height: 2px;
   transition: all .2s;
