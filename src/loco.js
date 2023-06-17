@@ -23,3 +23,11 @@ document.getElementById("arrow-in-circle").addEventListener("click", scrollToEdu
 
 new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"))
 
+
+/// TODO modularize
+function changeColor(color) {
+    document.body.style.backgroundColor = color;
+}
+scroll.on('call', color => {
+    changeColor(color)
+});

@@ -596,6 +596,13 @@ function scrollToEducation() {
 }
 document.getElementById("arrow-in-circle").addEventListener("click", scrollToEducation);
 new ResizeObserver(()=>scroll.update()).observe(document.querySelector("[data-scroll-container]"));
+/// TODO modularize
+function changeColor(color) {
+    document.body.style.backgroundColor = color;
+}
+scroll.on("call", (color)=>{
+    changeColor(color);
+});
 
 },{"locomotive-scroll":"iDXE3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iDXE3":[function(require,module,exports) {
 /* locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
