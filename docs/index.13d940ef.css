@@ -6,13 +6,13 @@
   z-index: 102;
   opacity: 0;
   visibility: hidden;
-  background-color: #ffffffe6;
+  background-color: #ffffffd9;
   width: 70px;
   height: 70px;
   transition: opacity .5s ease-in-out;
   position: fixed;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 2rem;
+  left: 2rem;
 }
 
 .mobile-menu.active .main-logo {
@@ -59,16 +59,16 @@
   z-index: 102;
   background-color: none;
   text-align: center;
-  background-color: #00000080;
+  background-color: #000c;
   border: none;
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 64px;
   padding: 0;
   line-height: .6;
   display: inline-block;
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .nav-tgl > span {
@@ -114,10 +114,10 @@
 
 .nav:before {
   content: "";
-  clip-path: circle(30px at calc(100% - 65px) 65px);
+  clip-path: circle(20px at calc(100% - 1.5rem) 1.5rem);
   visibility: hidden;
   z-index: 100;
-  background: #000c;
+  background: #000000e6;
   width: 100vw;
   height: 100vh;
   transition: all .5s ease-in-out;
@@ -156,6 +156,16 @@
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu a {
+  color: #fff;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.mobile-menu a:hover {
+  color: #000;
+  background: #fff;
 }
 
 .navbar {
@@ -198,6 +208,15 @@
 
 #navbar-fullscreen-links {
   display: flex;
+}
+
+.navbar a {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.navbar .main-logo {
+  height: 44px;
+  padding: 2px;
 }
 
 .footer {

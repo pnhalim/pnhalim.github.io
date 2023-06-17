@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
 html, body {
-  color: #fff;
+  color: #000;
   margin: 0%;
   padding: 0%;
   font-family: Montserrat, sans-serif;
@@ -66,6 +66,11 @@ em {
   display: flex;
 }
 
+.middle-parent {
+  align-items: center;
+  display: flex;
+}
+
 .center-text {
   text-align: center;
 }
@@ -89,15 +94,13 @@ em {
 }
 
 a {
-  color: #fff;
-  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #6482ae;
+  cursor: pointer;
   text-decoration: none;
   transition: all .4s ease-out;
 }
 
 a:hover {
-  color: #000;
-  background: #fff;
   font-weight: bold;
 }
 
@@ -112,12 +115,14 @@ a:hover {
 }
 
 .icon-button {
-  width: 32px;
-  height: 32px;
-  padding: 0 4px 1.5rem;
+  display: block;
 }
 
-.icon-button:hover {
+.icon-button img {
+  padding: 0 4px;
+}
+
+.icon-button:hover img {
   opacity: .7;
   transition: all .1s ease-in;
 }
@@ -178,6 +183,7 @@ a:hover {
 
 .black-rectangle {
   z-index: 2;
+  color: #fff;
   background: #000;
   margin: 4rem 1rem;
   padding: 1rem 2rem;

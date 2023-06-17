@@ -7,7 +7,17 @@
 }
 
 body {
+  color: #fff;
   background-color: #000;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #000;
+  background: #fff;
 }
 
 .start {

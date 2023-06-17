@@ -187,6 +187,10 @@
 .navbar a {
   font-size: clamp(1rem, 3vw, 1.2rem);
 }
+.navbar .main-logo {
+  padding: 2px;
+  height: 44px;
+}
 
 /* =================== footer ==================== */
 .footer {

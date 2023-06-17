@@ -64,6 +64,10 @@ em {
   display: flex;
   justify-content: center;
 }
+.middle-parent {
+  display: flex;
+  align-items: center;
+}
 .center-text {
   text-align: center;
 }
@@ -102,12 +106,12 @@ a:hover {
   width: fit-content;
 }
 .icon-button {
-  padding: 0 4px;
-  width: 32px;
-  height: 32px;
-  padding-bottom: 1.5rem;
+  display: block;
 }
-.icon-button:hover {
+.icon-button img {
+  padding: 0 4px;
+}
+.icon-button:hover img {
   opacity: 0.7;
   transition: 0.1s ease-in;
 }

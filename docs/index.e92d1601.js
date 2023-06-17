@@ -575,12 +575,14 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"5XXrz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "scroll", ()=>scroll);
 var _locomotiveScroll = require("locomotive-scroll");
 var _locomotiveScrollDefault = parcelHelpers.interopDefault(_locomotiveScroll);
 const scroll = new (0, _locomotiveScrollDefault.default)({
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
-    multiplier: 0.5,
+    multiplier: 0.7,
     reloadOnContextChange: true,
     smartphone: {
         smooth: false
@@ -589,14 +591,7 @@ const scroll = new (0, _locomotiveScrollDefault.default)({
         smooth: true
     }
 });
-function scrollToEducation() {
-    const n = document.getElementById("education");
-    scroll.scrollTo(n);
-    scroll.update();
-}
-document.getElementById("arrow-in-circle").addEventListener("click", scrollToEducation);
 new ResizeObserver(()=>scroll.update()).observe(document.querySelector("[data-scroll-container]"));
-/// TODO modularize
 function changeColor(color) {
     document.body.style.backgroundColor = color;
 }
