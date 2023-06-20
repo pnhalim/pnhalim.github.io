@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"aoICI":[function(require,module,exports) {
+})({"7cBiH":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "33dffaa105481576";
+module.bundle.HMR_BUNDLE_ID = "01d2c3a403d2a535";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -573,23 +573,25 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"fZs3Q":[function(require,module,exports) {
-window.onload = function() {
-    document.getElementById("start").className += " fade-in-active";
-    document.getElementById("navbar").className += " fade-in-active";
-    document.getElementById("mobile-navbar").className += " fade-in-active";
+},{}],"hps1q":[function(require,module,exports) {
+var _locoJs = require("./loco.js");
+// scrolling shortcuts
+function scrollTo(id) {
+    const n = document.getElementById(id);
+    (0, _locoJs.scroll).scrollTo(n);
+    (0, _locoJs.scroll).update();
+}
+sections_dict = {
+    "goto-start": "start",
+    "goto-education": "education",
+    "goto-projects": "projects-title",
+    "goto-skills": "skills-title",
+    "goto-identity": "identity-title"
 };
-// hi
-const hi = document.getElementById("start-hi-svg");
-const mq = matchMedia("( min-width: 800px )");
-const updateViewBox = ()=>{
-    if (mq.matches) hi.setAttribute("viewBox", "370 -30 1100 400");
-    else hi.setAttribute("viewBox", "400 0 400 300");
-};
-hi.addEventListener("SVGLoad", updateViewBox);
-mq.addEventListener("change", updateViewBox);
-updateViewBox();
+for(let key in sections_dict)for (var elem of document.getElementsByClassName(key))elem.addEventListener("click", (evt)=>{
+    scrollTo(sections_dict[key]);
+});
 
-},{}]},["aoICI","fZs3Q"], "fZs3Q", "parcelRequirecdf1")
+},{"./loco.js":"5XXrz"}]},["7cBiH","hps1q"], "hps1q", "parcelRequirecdf1")
 
-//# sourceMappingURL=index.05481576.js.map
+//# sourceMappingURL=index.03d2a535.js.map

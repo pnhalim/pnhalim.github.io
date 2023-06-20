@@ -9,7 +9,8 @@ const scroll = new LocomotiveScroll({
         smooth: false
     },
     tablet: {
-        smooth: true
+        smooth: true,
+        breakpoint: 600
     }
 });
 

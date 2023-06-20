@@ -44,10 +44,7 @@ a:hover {
 #start-name-intro h2 {
   font-size: 1.75rem;
 }
-#arrow-in-circle {
-  padding: 2rem;
-  cursor: pointer;
-}
+
 /* start full screen */
 @media (min-width: 800px) {
   .start {
@@ -98,7 +95,7 @@ a:hover {
     padding-left: 10vw;
     padding-right: 10vw;
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: space-between;
   }
   .quote-section {

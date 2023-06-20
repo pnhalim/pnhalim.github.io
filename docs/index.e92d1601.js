@@ -588,7 +588,8 @@ const scroll = new (0, _locomotiveScrollDefault.default)({
         smooth: false
     },
     tablet: {
-        smooth: true
+        smooth: true,
+        breakpoint: 600
     }
 });
 new ResizeObserver(()=>scroll.update()).observe(document.querySelector("[data-scroll-container]"));

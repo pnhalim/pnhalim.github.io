@@ -1,0 +1,26 @@
+.table-of-contents {
+    position: absolute;
+    right: 1rem;
+    top: 15vh;
+    z-index: 98;
+}
+.table-of-contents.center {
+    top: 25vh;
+}
+
+
+.table-of-contents div {
+    height: 8px;
+    width: 9px;
+    background-color: #bababa86;
+    margin: 1rem 0;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1rem black);
+    transition: all 0.5s ease-in-out;
+}
+.table-of-contents div:hover {
+    filter: drop-shadow(0 0 0.5rem white);
+}
+.table-of-contents div.active {
+    background-color: #ffffff;
+}

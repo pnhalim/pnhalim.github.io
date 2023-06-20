@@ -1,13 +1,3 @@
-import { scroll } from './loco.js'
-
-// scrolling shortcuts
-function scrollToEducation() {
-    const n = document.getElementById("education");
-    scroll.scrollTo(n);
-    scroll.update();
-}
-document.getElementById("arrow-in-circle").addEventListener("click", scrollToEducation)
-
 window.onload = function() {
     document.getElementById('start').className += " fade-in-active"
     document.getElementById('navbar').className += " fade-in-active"
