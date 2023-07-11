@@ -9,6 +9,11 @@ body {
     padding-left: 2rem;
     padding-right: 3rem;
 }  
+@media (min-width: 600px) {
+    .page {
+        margin-top: 5rem;
+    }  
+}
 @media (min-width: 800px) {
     .page {
         margin-top: 7rem;
@@ -21,6 +26,9 @@ body {
         padding-right: 5vw;
     }  
 }
+
+
+/* <div class="fullscreen-column-lean-right fullscreen-column-align-bottom"> */
 
 .page .title {
     border-bottom: 6px solid #926B31;

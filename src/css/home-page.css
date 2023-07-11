@@ -141,15 +141,6 @@ a:hover {
   display: none;
   border: 5px solid white;
 }
-.projects .image-with-description {
-  display: block;
-  margin: 0;
-}
-.project-gallery {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0.5rem;
-}
 .projects ol li {
   padding: 5px 0;
 }
@@ -177,18 +168,15 @@ a:hover {
     right: 10vw;
     z-index: 1;
   }
-  .project-gallery {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 0.5rem;
-  }
 }
 @media (min-width: 1200px) {
   .project .black-rectangle {
     width: 490px;
   }
 }
-
+.gallery-item {
+  border: none;
+}
 
 
 /* ==================== skills =================== */
