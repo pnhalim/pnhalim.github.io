@@ -28,7 +28,7 @@ body {
 }
 
 
-/* <div class="fullscreen-column-lean-right fullscreen-column-align-bottom"> */
+
 
 .page .title {
     border-bottom: 6px solid #926B31;
@@ -44,12 +44,12 @@ body {
 @media (min-width: 1000px) {
     .fullscreen-column-lean-left {
         display: grid;
-        grid-template-columns: fit-content(40%) 1fr;
+        grid-template-columns: 1fr 2fr;
         gap: 1rem;
     }
     .fullscreen-column-lean-right {
         display: grid;
-        grid-template-columns: 1fr fit-content(40%);
+        grid-template-columns: 2fr 1fr;
         gap: 1rem;
     }
     .fullscreen-column-align-top {

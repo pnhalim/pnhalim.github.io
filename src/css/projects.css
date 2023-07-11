@@ -1,0 +1,29 @@
+body {
+    background-color: #3B4F6C;
+}
+.page .title {
+    border-bottom: 6px solid #3B4F6C;
+}
+
+.card {
+    padding: 0rem 1.5rem 1rem 1.5rem;
+    margin: 1rem 0;
+    border: 1.5px dashed gray;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+}
+.card:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+h3.lighter {
+    color: black;
+    font: lighter;
+}
+h3 a {
+    color: black;
+    border-bottom: 2px dashed #6987b5
+}
+h3 a:hover {
+    border-bottom: 4px solid #6987b5
+}
