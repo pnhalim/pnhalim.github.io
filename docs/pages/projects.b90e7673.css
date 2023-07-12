@@ -32,4 +32,10 @@ h3 a:hover {
   border-bottom: 4px solid #6987b5;
 }
 
+h3 a.disabled {
+  color: #000;
+  cursor: auto;
+  border-bottom: 2px dashed gray;
+}
+
 /*# sourceMappingURL=projects.b90e7673.css.map */

@@ -27,3 +27,8 @@ h3 a {
 h3 a:hover {
     border-bottom: 4px solid #6987b5
 }
+h3 a.disabled {
+    color: black;
+    border-bottom: 2px dashed gray;
+    cursor: auto;
+}
