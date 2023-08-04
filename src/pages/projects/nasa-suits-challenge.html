@@ -49,10 +49,65 @@
       <div class="page">
         <div class="title"><h1>NASA SUITS Challenge</h1></div>
         <div class="spacer-mini"></div>
-        <h2>~ Hi, this page is still under construction ~</h2>
-        <p>For now, you can just read this short summary below...</p>
+        <h2>Context</h2>
+        <p>NASA is working diligently to bring astronauts back to the moon in the upcoming <a href="https://www.nasa.gov/specials/artemis/" target="_blank">Artemis missions</a>. There are two main goals of the Artemis missions:</p>
+        <ol>
+          <li>To explore the surface of the moon more deeply than previously possible.</li>
+          <li>To iteratively test new technologies in preparation for missions to Mars.</li>
+        </ol>
+        <p>In line with the goals of the Artemis mission, NASA's JARVIS (aka Joint-AR) project investigates the potential of augmented reality (AR) displays in astronaut suits. There are numerous benefits of an astronaut AR informatics system:</p>
+        <ul>
+          <li>Increased autonomy and efficiency for astronauts</li>
+          <li>Deeper understanding of information through visualizations</li>
+          <li>Greater access to speacialized knowledge with less training</li>
+        </ul>
+        <h2>Premise</h2>
+        <p>Stemming from JARVIS, the <a href="https://www.nasa.gov/specials/artemis/" target="_blank">NASA SUITS Challenge</a> asks university teams to develop augmented reality (AR) interfaces for astronauts. The interface should aid the astronaut in navigation, geological sampling, tracking mission tasks, and more. The challenge outlines some requirements to define how our interface will be tested, but teams are also given a lot of flexibility in their designs and implementation. </p>
+        <p>Each year, nine teams are selected as finalists from universities nationwide, including Stanford, Duke, USC, Berkeley, Umich, Carnegie Mellon, etc. Although the SUITS Challenge is not a competition, the University of Michigan has (in my opinion) been the leader each year, demonstrating both high technical proficiency and a comprehensive user-centered design process.</p>
+        <h2>My Team</h2>
+        <p>I was the president of a 60-member development team at the University of Michigan called <a href="https://claws.engin.umich.edu/" target="_blank">CLAWS</a>. As both the project mnaager and AR development lead, I simultaneously oversaw the development and integration of features across 5 cross-functional teams whilst onboarding and assisting all AR developers.</p>
+        <p>Here are the final deliverables from my 2 years in CLAWS.</p>
+        <div class="center-text">
+          <iframe src="https://www.youtube.com/embed/X72GJoI4v_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/aLqUng8fB_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+        </div>
+        <div class="spacer-mini"></div>
+        <p>Each year, we spearheaded major changes, from development, to design, to team culture. We constantly had an outlook of improvement, which led to major success each year.</p>
+        <h2>AR Development Lead</h2>
+        <p>As the AR development lead, I did three main tasks:</p>
+        <ul>
+          <li>Onboard the team and ensure technical competency</li>
+          <li>Develop foundational software to make future development easier and efficient</li>
+          <li>Oversee integration and communication with other teams</li>
+        </ul>
+        <h3>Onboarding</h3>
+        <p>The AR team consisted of around 12 new AR developers. I spent the first 2 months of the year to onboard the new team on augmented reality basics, the ins-and-outs of the HoloLens 2, Microsoft's Mixed Reality Toolkit, Unity Engine, C# scripting, software architecture patterns, and GitHub workflow. Each week, I gave a 1 hour interactive (and fun) lecture about a topic and also gave a project to put the learning into practice.</p>
+        <p>It was very fun to onboard new developers and create lessons plans, but next year, I have even more ideas for onboarding, involving having multiple instructors, a faster onboarding timeline, more projects, and new onboarding topics.</p>
+        <h3>Foundational Software</h3>
+        <p>Since the vast majority of the AR team was new to AR development, I decided to develop most of the foundational software to lessen the learning curve for other developers. Additionally, since most of this foundational software would be used by all developers across all cross-functional feature teams, I developed most of the foundational software during the onboarding phase.</p>
+        <p>This foundational software included:</p>
+        <ul>
+          <li>An publisher-subscriber event system to decrease dependencies between features</li>
+          <li>A back end database that utilizes a singleton interface for easy access</li>
+          <li>Unity custom prefabs to support eye-gaze interactions</li>
+          <li>Connection to NASA's telemetry data to receive mission info</li>
+        </ul>
+        <p>Throughout the year, I also developed more foundational software with certain members of the team, including:</p>
+        <ul>
+          <li>A full system state machine to enable context aware voice commands</li>
+          <li>A pop-up manager utilizing a singleton to create pop-up messages</li>
+        </ul>
+        <h3>Integration</h3>
+        <p>During the onboarding phase, I clearly outlined our software architecture and created a data-flow model to help developers understand how each subsystem fits within the overall product.</p>
+        <p>Throughout the year, I oversaw the progress of AR development across all features and assisted with GitHub integration across all the features. I also helped members communicate well with other teams, especially the UX team.</p>
+        <p>This is one of the biggest areas where our team can improve. I am planning to create a CI/CD pipeline for next year in order to allow for easier integration and faster user testing with the UX team.</p>
+
+        <!-- <h2>Project Manager</h2> -->
+
+        <p><i>Patrick Halim - 8/4/23</i></p>
+        <div class="spacer-mini"></div>
         <h2>tl;dr</h2>
-        <p>I led a 60-member development team selected by NASA to develop 2 full augmented reality interfaces for astronauts. As both the project manager and AR development lead, I simultaneously oversaw the development and integration of features across 5 functional teams whilst onboarding and assisting all AR developers. I also created foundational software for the AR team, such as a singleton interface for the backend, a publisher-subscriber event system, and a system state machine.</p>
+        <p>I led a 60-member development team selected by NASA to develop 2 full augmented reality interfaces for astronauts. As both the project manager and AR development lead, I simultaneously oversaw the development and integration of features across 5 cross-functional teams whilst onboarding and assisting all AR developers. I also created foundational software for the AR team, such as a singleton interface for the backend, a publisher-subscriber event system, and a system state machine.</p>
         <p>Technologies used: <i>Unity Engine, C#, MRTK, HoloLens 2</i></p>
         <div class="spacer-mini"></div> 
         <div class="spacer-mini"></div> 
