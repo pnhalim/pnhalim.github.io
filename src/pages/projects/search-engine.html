@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Bosch 2023 Internship | Patrick Halim</title>
+  <title>Search Engine | Patrick Halim</title>
 
   <meta name="keywords" content="Patrick, Halim, Patrick Halim, Portfolio, pnhalim">
   <meta name="description" content="Personal Portfolio Website">
@@ -47,16 +47,24 @@
   <div data-scroll-container>
     <div class="center-parent">
       <div class="page">
-        <div class="title"><h1>Bosch 2023 Internship</h1></div>
+        <div class="title"><h1>Search Engine</h1></div>
         <div class="spacer-mini"></div>
-        <h2>My Project</h2>
-        <p>This was my 2nd year interning at Bosch! My main project was building a UDP socket pipeline to send data from autonomous parking software running on a Raspberry Pi to a Python server. This allowed for real-time visualizations of raw sensor data, parking spot detection, etc for our autonomous parking software, allowing for greatly increased efficiency in development and testing. This pipeline is now being used by a Bosch team in Germany, and it will be used in every new Bosch parking project for the foreseeable future. Due to NDA, I can't give too much info about the project itself, but I can talk about some of the skills I learned.</p>
-        <p>This year, I got to work directly in Bosch's production software written in C++. I gained a lot of experience navigating a large codebase and integrating my code with existing software. I learned about Docker, CMake, Conan (C++ package manager), and networking (udp sockets). I also experienced formal pull requests with Qac code quality checks and automated builds with Jenkins, which was very cool and inspired me to make a CI/CD pipeline for my club. Compared to last year, more people worked in-office this year, which made office life much more enjoyable (we interns even organized a ping-pong tournament). Overall great experience!</p>
+        <h2>Overview</h2>
+        <p>I made a search engine to rank Wikipedia articles using tf-idf and PageRank.</p>
+        <p>The search engine contains 3 parts:</p>
+        <ul>
+            <li>MapReduce server and pipeline for tf-idf inverted index</li>
+            <li>Python Flask server to serve the Rest API</li>
+            <li>Search server to deliver the user interface with server-side dynamic pages</li>
+        </ul>
+        <h2>MapReduce Server</h2>
+        <p>To make search ranking efficient, I created an inverted index which tf-idf </p>
+        <p>I created a MapReduce server which follows the same structure as the Hadoop streaming interface. The contains a manager which receives MapReduce jobs. This manager distributes the job among many different workers, with fault-tolerance mechanisms and redundancy protocols. This was one of my first experiences with distributed systems and multi-threaded programming.</p>
         <p><i>Patrick Halim - 12/25/23</i></p>
         <div class="spacer-mini"></div> 
         <h2>tl;dr</h2>
-        <p>I built a websocket pipeline to send sensor data from autonomous parking software running on a Raspberry Pi to a Python server. This allowed for real-time visualizations of raw sensor data, parking spot detection, etc for our autonomous parking software, allowing for greatly increased efficiency in development and testing. This pipeline is now being used by a Bosch team in Germany, and it will be used in every new Bosch parking project for the foreseeable future.</p>
-        <p>Technologies used: <i>C++, Python, Conan Package Manager, Docker, Bash, CMake, CANoe, Raspberry Pi</i></p>
+        <p>I built a search engine to rank Wikipedia articles using both tf-idf and PageRank. I implemented a custom MapReduce server and pipeline to create a tf-idf inverted index. In the process, I learned about service-based architecture, multi-threading and concurrency, redundancy protocols, and fault tolerance.</p>
+        <p>Technologies used: <i>Python, Flask, SQLite, Javascript, HTML, CSS</i></p>
         <div class="spacer-mini"></div> 
         <div class="spacer-mini"></div> 
       </div>
