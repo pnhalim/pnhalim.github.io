@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search Engine | Patrick Halim</title>
+  <title>Instagram (clone) | Patrick Halim</title>
 
   <meta name="keywords" content="Patrick, Halim, Patrick Halim, Portfolio, pnhalim">
   <meta name="description" content="Personal Portfolio Website">
@@ -47,29 +47,21 @@
   <div data-scroll-container>
     <div class="center-parent">
       <div class="page">
-        <div class="title"><h1>Search Engine</h1></div>
+        <div class="title"><h1>Instagram (clone)</h1></div>
         <div class="spacer-mini"></div>
         <h2>Overview</h2>
-        <p>I made a search engine to rank Wikipedia articles using tf-idf and PageRank.</p>
-        <p>The search engine contains 3 parts:</p>
-        <ul>
-            <li>MapReduce server and pipeline for tf-idf inverted index</li>
-            <li>Python Flask server to serve the Rest API</li>
-            <li>Search server to deliver the user interface with server-side dynamic pages</li>
-        </ul>
-        <h2>MapReduce Server</h2>
-        <p>To make search ranking efficient, I created an inverted index which tf-idf </p>
-        <p>I created a MapReduce server which follows the same structure as the Hadoop streaming interface. The contains a manager which receives MapReduce jobs. This manager distributes the job among many different workers, with fault-tolerance mechanisms and redundancy protocols. This was one of my first experiences with distributed systems and multi-threaded programming.</p>
-        <h2>Rest API</h2>
-        <p>I created a Rest API using Python Flask to provide search results for search queries. The Rest API searches in the inverted index for tf-idf, calculates search result rankings using tf-idf and PageRank, and returns search results in JSON format.</p>
-        <h2>Search Server</h2>
-        <p>The final component is the search server, which is the most user-facing component. It features a user interface rendered with server-side dynamic pages (Flask, Jinja, HTML, CSS). The user makes search queries, and the back end sends a Rest API request and renders an HTML file for the search results.</p>
-        <p>This was a part of a school project, so unfortunately I cannot show my code for this project.</p>
+        <p>This was one of my first experiences with the full web development stack. My previous web dev projects were mostly front-end focused. I made my personal website (this website!), which is a static site with just vanilla HTML, CSS, JS. I also made a LinkedIn clone, which used a React + Redux front end, and BaaS (Back-end as a Service) / PaaS (Platform as a Service) with Google Firebase.</p>
+        <h2>Front End</h2>
+        <p>The front end is a mix of client-side dynamic pages (with React) and static pages (server-side dynamic pages rendered through Flask and Jinja). I had a bit of experience with React already, but this helped me gain more confidence with React and become familiar with best practices. React functional components are pretty fun actually, and I enjoy front-end development with React so far. I also got more practice writing HTML + CSS quickly to match a design, which is so much easier than front-end development with Unity LOL.</p>
+        <h2>Back End</h2>
+        <p>The back end is made with Python Flask. To interface with React components, I made a Rest API (kinda fun actually). I also wrote Flask entries to render the server-side dynamic pages. I used SQLite as the database because the scale of this project is small (user base = 1). However, I would definitely like to gain experinece with PostgreSQL and MySQL in the future.</p>
+        <h2>Web Development?</h2>
+        <p>Overall this was a fun project, which is good LOL since the majority of software development opportunities are related to web development in some way! I like front-end development, especially with React. It's pretty fun to work with designers and iterate to achieve the best UX and something that is very visually appealing (based on experience with my project team). Writing HTML, CSS, and JS to do that is pretty enjoyable (though, I'm not sure if I like Javascript very much). I also like back-end development. Writing the Rest API was pretty fun, though I guess there are many more complexities with back-end systems that I didn't have to deal with -- like distributed systems woo!</p>
         <p><i>Patrick Halim - 12/26/23</i></p>
         <div class="spacer-mini"></div> 
         <h2>tl;dr</h2>
-        <p>I built a search engine to rank Wikipedia articles using both tf-idf and PageRank. I implemented a custom MapReduce server and pipeline to create a tf-idf inverted index. In the process, I learned about service-based architecture, multi-threading and concurrency, redundancy protocols, and fault tolerance.</p>
-        <p>Technologies used: <i>Python, Flask, SQLite, Javascript, HTML, CSS</i></p>
+        <p>I made a full-stack Instagram web app with a ReactJS frontend and Flask rest API. Similar to Instagram, it features a modern UX through infinite scrolling, commenting, double-tap to like, account creation, and account editing.</p>
+        <p>Skills used: <i>Python, Flask, SQLite, ReactJS, Javascript, HTML, CSS</i></p>
         <div class="spacer-mini"></div> 
         <div class="spacer-mini"></div> 
       </div>
