@@ -7,7 +7,3 @@ rm -rf docs
 
 npm run prod
 mv dist docs
-
-git add .
-git commit -m "build gh pages"
-git push
