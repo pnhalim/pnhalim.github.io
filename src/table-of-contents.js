@@ -7,7 +7,7 @@ function scrollTo(id) {
     scroll.update();
 }
 
-sections_dict = {
+var sections_dict = {
     "goto-start"    : "start",
     "goto-education": "education",
     "goto-projects" : "projects-title",
