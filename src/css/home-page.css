@@ -22,7 +22,7 @@ a:hover {
 
 
 /* ==================== start ==================== */
-.draw-svg-path {
+/* .draw-svg-path {
   stroke-dasharray: 2000;
   stroke-dashoffset: 400;
   animation: draw 3s linear forwards;
@@ -31,8 +31,7 @@ a:hover {
   to {
     stroke-dashoffset: -1600;
   }
-}
-
+} */
 
 .start {
   background: #3B4F6C;

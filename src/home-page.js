@@ -19,3 +19,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
   mq.addEventListener( 'change', updateViewBox );
   updateViewBox()
 });
+
+var path = document.querySelector('.draw-svg-path');
+var length = path.getTotalLength();
+path.style.transition = path.style.WebkitTransition = 'none';
+path.style.strokeDasharray = length + ' ' + length;
+path.style.strokeDashoffset = length;
+path.getBoundingClientRect();
+path.style.transition = path.style.WebkitTransition =
+  'stroke-dashoffset 3s linear';
+path.style.strokeDashoffset = '0';

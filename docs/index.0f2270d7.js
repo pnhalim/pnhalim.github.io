@@ -1,2 +1,0 @@
-window.onload=function(){document.getElementById("start").className+=" fade-in-active",document.getElementById("navbar").className+=" fade-in-active",document.getElementById("mobile-navbar").className+=" fade-in-active"},window.addEventListener("DOMContentLoaded",e=>{let t=document.getElementById("start-hi-svg"),a=matchMedia("( min-width: 800px )"),n=()=>{a.matches?t.setAttribute("viewBox","370 -30 1100 400"):t.setAttribute("viewBox","400 0 400 300")};t.addEventListener("SVGLoad",n),a.addEventListener("change",n),n()});
-//# sourceMappingURL=index.0f2270d7.js.map
