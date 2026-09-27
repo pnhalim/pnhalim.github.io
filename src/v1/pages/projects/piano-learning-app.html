@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Piano Learning App | Patrick Halim</title>
+
+  <meta name="keywords" content="Patrick, Halim, Patrick Halim, Portfolio, pnhalim">
+  <meta name="description" content="Personal Portfolio Website">
+  <meta name="author" content="Patrick Halim">
+
+  <link rel="icon" href="../../assets/icon.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/header-footer.css">
+  <link rel="stylesheet" href="../../css/page.css">
+  <link rel="stylesheet" href="../../css/projects.css">
+  <script type="module" src="../../main.js"></script>
+</head>
+<body>
+  <div>
+  <!-- header -->
+    <div class="mobile-menu">
+      <!-- credit: https://codepen.io/ahmedhrayyan/pen/EremLG -->
+      <button class="nav-tgl" type="button" aria-label="toggle menu">
+        <span aria-hidden="true"></span>
+      </button>
+      <a class="icon-button" href="/v1/"><img class="main-logo" src="../../assets/icon.svg"></a>
+      <nav class="nav">
+        <ul>
+          <li><a href="../projects">projects</a></li>
+          <li><a href="/v1/pages/Resume-Patrick-Halim.pdf">resume</a></li>
+          <li><a href="../contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="navbar" class="navbar">
+      <a class="icon-button" href="/v1/"><img class="main-logo" src="../../assets/icon.svg"></a>
+      <div id="navbar-fullscreen-links">
+        <a href="../projects">projects</a>
+        <a href="/v1/pages/Resume-Patrick-Halim.pdf">resume</a>
+        <a href="../contact">contact</a>
+      </div>
+    </div>
+  </div> 
+  <div data-scroll-container>
+    <div class="center-parent">
+      <div class="page">
+        <div class="title"><h1>Piano Learning App</h1></div>
+        <div class="spacer-mini"></div>
+        <h2>Inspiration</h2>
+        <div class="fullscreen-column-lean-right fullscreen-column-align-middle">
+          <div>
+            <p>This was one of my first coding projects that I developed completely independently. I made this in high school during 12th grade for my AP Computer Science Principles class. This was my first time using classes and developing my own Python library! Woo!</p>
+            <p>I was inspired by Simply Piano, which is a popular mobile app that teaches beginner pianists how to play piano. It features a scrollable sheet music display and a database of many different songs.</p>
+          </div>
+          <div class="center-parent">
+            <img src="../../assets/simply-piano.jpg" alt="">
+          </div>          
+        </div>
+        <h2>The App</h2>
+        <p>I created a similar app using Python. I used <i>pygame</i>, <i>tkinter</i>, and <i>turtle</i> to make the front end. I wanted to make the app song database easily scalable, so I created a library to process midi files (commonly used for music storage) and output the data in Python data structures using <i>mido</i>.</p>
+        <p>Overall, this project took around 2 months to make and was extremely fun because it was one of my first independent projects. I liked getting to make important decisions about the app design and software architecture (using classes for the first time). You can view the finished product <a href="https://github.com/pnhalim/Pocket-Piano">HERE</a>.</p>
+        <p>Patrick Halim - 12/25/23</p>
+        <div class="spacer-mini"></div> 
+        <h2>tl;dr</h2>
+        <p>I developed a piano app based on Simply Piano to teach beginner pianists notes and rhythm. The app includes a scrolling sheet music display, virtual piano simulation, audio feedback, song database, and midi file processing via a self-created Python library.</p>
+        <p>Technologies used: <i>Python, Tkinter, Pygame, Mido</i></p>
+        <div class="spacer-mini"></div> 
+        <div class="spacer-mini"></div> 
+      </div>
+    </div>
+    <div class="footer">
+      <p class="center-text">Copyright &copy; 2023 Patrick Halim</p>
+      <div class="center-parent middle-parent">
+        <a href="https://github.com/pnhalim" target="_blank" class="icon-button"><img src="../../assets/github.png" alt="github" width="32px"></a>
+        <a href="mailto:pnhalim@umich.edu" target="_blank" class="icon-button"><img src="../../assets/email.png" alt="email" width="36px"></a>
+        <a href="https://www.linkedin.com/in/patrick-halim/" target="_blank" class="icon-button"><img src="../../assets/linkedin.png" alt="linkedin" width="32px"></a>
+      </div>
+      <div class="spacer-mini"></div>
+    </div>
+  </div>
+  
+</body>
+</html>

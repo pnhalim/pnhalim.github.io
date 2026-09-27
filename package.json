@@ -1,21 +1,25 @@
 {
   "name": "pnhalim.github.io",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "dev": "parcel src/index.html",
-    "prod": "parcel build src/index.html"
+    "dev": "vite",
+    "prod": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gsap": "^3.15.0",
     "locomotive-scroll": "^4.1.4"
   },
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.1"
   }
 }

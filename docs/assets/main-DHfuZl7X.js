@@ -1,0 +1,1 @@
+var e=document.querySelector(`.mobile-menu`);e.querySelector(`.nav-tgl`).addEventListener(`click`,t=>{e.classList.toggle(`active`)});
